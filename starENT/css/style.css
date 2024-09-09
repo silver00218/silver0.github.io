@@ -1,0 +1,10 @@
+@import url('./reset.css'); /*reset css*/
+@import url('./common.css'); /*공통 css*/
+@import url('./main.css'); /* 메인페이지 css*/
+@import url('./sub01_1.css'); /*서브페이지 1 회사소개 페이지 css*/
+@import url('./sub02_04.css');/*서브페이지 2 ~ 4 가수, 배우, 오디션 페이지 css*/
+@import url('./sub05_06.css'); /*서브페이지 5 ~6, 뮤직비디오, 스타쉽 스토어 페이지 css*/
+
+
+
+@import url('./swiper/swiper.min.css'); /* 스와이퍼 css */

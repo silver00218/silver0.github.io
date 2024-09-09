@@ -1,0 +1,29 @@
+
+#art_list {
+    background: #f2f2f2;
+    margin: 2em 0;
+    padding-bottom: 0;
+   
+}
+#art_list > .layout > div> .title{display: flex; justify-content: space-between; align-items: center; padding: 1em 0 0;}
+#art_list > .layout > div > .title h2{color: #ffa200; font-size: 4em;  font-weight: 300;}
+#art_list > .layout > div > .title >  h2 > span{margin-left: 0.7em; font-size: 0.5em; font-weight: 500;}
+#art_list .box {
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    height: 500px; 
+}
+
+#art_list > .layout > div > ul {width: 1500px;   height: 400px; display: flex; align-items: center;    position: absolute;}
+#art_list > .layout > div > ul > li{ position: absolute;}
+#art_list > .layout > div> ul > li > a{display: block; position: relative; overflow: hidden; width: 240px; height: 300px; margin-right: 2em}
+#art_list > .layout > div > ul > li > a  img{width: 100%; position: absolute; top: -15px; left: 0;}
+#art_list > .layout > div > ul > li > a:hover::after{z-index: 200; width: 240px; height: 300px; display: block; content: ''; background-color: rgba(51, 51, 51, 0.473); position: absolute; top: 0; left: 0;}
+#art_list > .layout > div > ul > li > a:hover p{opacity: 1;}
+#art_list > .layout > div > ul > li > a > p{position: absolute; opacity: 0; transition: all 0.3s; font-size: 1.5em; color: #fff; z-index: 300; font-weight: 500; bottom: 10px; left: 50%; transform: translateX(-50%);}
+
+@media screen and (max-width:1024px){
+    .art_box > ul > li > a > p{opacity: 1; text-shadow: 0 0 5px #222222e3;}
+    .art_box > ul > li > a:hover::after{display: none;}
+}

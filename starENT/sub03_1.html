@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배우</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon-precomposed" href="img/main/starship_favicon.png">
+    <link rel="shortcut icon" href="img/main/starship_favicon.png">
+    <!-- 구글 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,700,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,200,0,0" />    <!-- 자바스크립트 -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/sub01.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <? include "header.html" ?>
+    <div class="contents">
+        <!-- 페이지 이름 -->
+        <div class="page_tit">
+            <div class="tit_bg">
+                <div class="bg_box"></div>
+                <div class="bg_sub03_1"></div>
+            </div>
+            <h2>ACTORS</h2>
+        </div>
+        <!-- 배우 리스트 -->
+        <div class="art_box">
+            <div class="layout">
+                <div class="top">
+                    <!-- select -->
+                    <div class="select_box">
+                        <div class="view_slt arrow_view">
+                            <span class="view_select "></span>
+                            <span class="material-symbols-rounded select_icon">expand_more</span>
+                        </div>                        <ul class="order">
+                            <li><a href="#">이름순</a></li>
+                            <li><a href="#">데뷔순</a></li>
+                            <li><a href="#">최근 데뷔순</a></li>
+                        </ul>
+                    </div>
+                    <!-- 검색 -->
+                    <div class="sec_box">
+                        <label for="sec_text"></label>
+                        <input type="search" name="sec_text" id="sec_text" placeholder="search...">
+                        <a href="#" class="sec_btn"><span class="material-symbols-rounded ">search</span></a>
+                        <!-- <a href="#" class="sec_btn"><span class="material-symbols-rounded">close</span></a> -->
+                    </div>
+                </div>
+                <!-- 리스트 -->
+                <div class="art_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_goara.jpg" alt="고아라"></figure>
+                                <div class="name"><span>고아라</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_kimbeom.jpg" alt="김범"></figure>
+                                <div class="name"><span>김범</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_kimshana.jpg" alt="김샤나"></figure>
+                                <div class="name"><span>김샤나</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_kimseunghwa.jpg" alt="김승화"></figure>
+                                <div class="name"><span>김승화</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_ryuhyeyoung.jpg" alt="류혜영"></figure>
+                                <div class="name"><span>류혜영</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_parksun.jpg" alt="박주비"></figure>
+                                <div class="name"><span>박주비</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_sonwoohyeon.jpg" alt="손우현"></figure>
+                                <div class="name"><span>손우현</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_songseungheon.jpg" alt="송승헌"></figure>
+                                <div class="name"><span>송승헌</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_songjiyeon.jpg" alt="송지연"></figure>
+                                <div class="name"><span>송지연</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_songhayoon.jpg" alt="송하윤"></figure>
+                                <div class="name"><span>송하윤</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure><img src="./img/sub03/actor_shinseungho.jpg" alt="신승호"></figure>
+                                <div class="name"><span>신승호</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    <!-- 페이징 -->
+                    <div class="pageing">
+                        <ul class="page"></ul>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <? include "footer.html" ?>
+</body>
+</html>

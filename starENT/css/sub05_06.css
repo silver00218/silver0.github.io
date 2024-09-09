@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.bg_sub05_1{background-image: url('../img/sub05/pc_tit_bg.jpg');}/* 뮤직 비디오 */
+.bg_sub05_3{background-image: url('http://silver0.co.kr/starENT/img/sub05/sub05_03_bg.jpg');}/* 공지사항 */
+.bg_sub06_1{background-image: url('../img/sub06/pc_tit_bg.jpg');}/* 스타쉽스토어 */
+
+/* 공지사항 */
+.border_wrap{max-width: 1300px; margin: 0 auto; min-height: 400px; }
+.list_footer{z-index: 0;}
+
+/* 뮤직비디오 페이지 css*/
+.box .layout{overflow: hidden;}
+.box h2{color: #ffa200; font-weight: 500; text-align: center; font-size: 2em;}
+/* 가수 이름 */
+.art_name.swiper-container{z-index: 0;}
+.art_name { max-width:1000px; margin:0 auto; }
+.art_name ul{ padding: 3em 0; }
+.art_name a{display: block; color: #888; font-size: 1.5em; font-weight: 500; transition: all 0.3s; position: relative; text-align: center;}
+
+.art_name li a::after{position: absolute; left: 50%; transform: translateX(-50%); display: block;width: 0em; height: 0.6em; content: ''; background: #ffa200; border-radius: 50%; }
+.art_name li.view a{ color: #ffa200;}
+.art_name li.view a::after{width: 0.6em; height: 0.6em;}
+.art_name li:hover a{color: #ffa200;}
+/* 뮤직비디오 */
+.box{margin: 2em 0;}
+.video_box li:not(:first-child){display: none;}
+h2.mv_title{color: #333; font-weight: 600; font-size: 2.5em; text-align: left; margin-left: 0.7em; margin-bottom: 0.3em;}
+.music_video{display: flex; justify-content: space-between; box-sizing: border-box; padding: 0 2em;}
+.music_video .video_box{width: 70%;}
+.music_video .video_box li{background: #000; position: relative; height: 450px;}
+.music_video .video_box li video{width: 100%; height: 450px; position: absolute; top: 0;}
+iframe{width: 100%; height: 450px; }
+
+/* 리스트 */
+.video_slide{width:28%; z-index: 0;} 
+.video_slide .music_list ul{margin-bottom: 10px;}
+.video_slide .music_list li{display: flex;  flex-direction: column; justify-content: space-between;}
+.video_slide .music_list li a{position: relative; margin-bottom: 10px; border: 1px solid #f2f2f2;}
+.video_slide .music_list li a img{width: 100%;}
+.video_slide .music_list .music_tit{width: 100%; height: 100%; transition: all 0.3s; opacity: 0; border: 3px solid #ffa200; visibility: hidden;  box-sizing: border-box; font-size: 1.6em; background: rgba(0, 0, 0, 0.698); position: absolute; top: 0; color: #ffa200; display: flex; justify-content: center; align-items: center;}
+
+/* 오버시 */
+.music_list li a:hover .music_tit{opacity: 1; visibility:visible; }
+
+/* 좌우버튼 */
+.mv_next.swiper-button-next,.mv_prev.swiper-button-prev{position: relative; background-image: none;}
+.prev_next_btn{display: flex; margin-top:1em; position: relative; align-items: center;}
+.prev_next_btn span{color: #ffa200; font-size: 3em; font-weight: 600; cursor: pointer;}
+/* 슬라이드 번호 */
+.pageNum span{font-weight: 500;}
+.swiper-pagination.pageNum{position: relative; font-size: 2em; bottom: 15px;}
+.pageNum.swiper-pagination-fraction{width: 119px;}
+.pageNum .swiper-pagination-current, .pageNum .swiper-pagination-total{font-size: 1.5em;}
+.pageNum .swiper-pagination-total{color: #555; }
+
+/* 스타쉽스토어 페이지 css */
+.best_box h2{color: #ffa200; font-weight: 500; text-align: center; font-size: 2em;}
+.best_box .top{display: flex; justify-content: space-between; margin: 4em 0 3em;}
+/* 스토어바로가기 버튼*/
+.store_btn a{display: block; padding:0.5em 2em; border: 2px solid #ffa200; border-radius: 20px; color: #333; text-align: center; transition: all 0.3s;}
+.store_btn a:hover{background: #ffa200; color: #fff;}
+/* 모바일 버전 */
+.mb_store_btn{text-align: center; display: none;}
+.mb_store_btn a{display: inline-block; width: 3.5em; }
+.mb_store_btn a img{width: 100%;}video_slide
+/* 상품 리스트 */
+.best_item{margin: 2em 0; position: relative;}
+.best_item .item_list{display: grid; grid-template-columns: repeat(4, 1fr); column-gap:3em; row-gap: 8em;}
+.item_list > li{width: 100%;}
+.item_list a{display: block; color: #333;}
+/* 상품이미지 */
+.item_img{position: relative; border-radius: 20px; overflow: hidden; border: 1px solid #f2f2f2}
+.item_list> li img{width: 100%; border-radius: 20px; transition: all 0.3s; }
+.item_list> li figure:hover img{transform: scale(1.2);}
+.item_img > .over_icon > ul{display: flex; justify-content: center; align-items:end; position: absolute; bottom: 10px; width: 100%; opacity: 0; visibility: hidden; transition: all 0.3s;}
+.over_icon > ul > li:last-child{margin-left: 1em;}
+.over_icon > ul > li span{color: #fff; font-size: 2em; text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);}
+/* 상품 오버시 */
+.item_list> li:hover .over_icon > ul{opacity: 1; visibility: visible;}
+/* 상품 정보 */
+.item_info{margin-top: 5px; }
+.item_info * {display: block; font-size: 1em;}
+.item_info .set{font-size: 1em; color: #777;}
+.item_info .name{color: #444;}
+.item_info .price_info{margin-top: 1em; font-size: 1em; display: flex; justify-content: space-between; }
+/* 새상품, 한정판매 표시 */
+.new_limit{display: flex;   justify-content: space-between;}
+.new_limit > li{font-size: 0.8em; position: relative; border-radius: 20px; padding: 0 15px; text-align: center;  color: #fff;}
+.new_limit .new{background: #ffa200;}
+.new_limit .limit{background: #ff6d4d;   margin-left: 0.5em; }
+
+
+/* 더보기 버튼 */
+.best_item > .icon_arrow{text-align: center; margin-top: 20px; display: none;}
+
+
+
+/* 반응형 */
+
+@media screen and (min-width:601px){ .item_list > li:nth-child(n+5){display: block !important;} }
+
+@media screen and (max-width:1300px){
+    .best_box .top, .best_item .item_list{width: 95%; margin:3em auto 0;}
+    .best_box .select_box{margin: 0;}
+}
+@media screen and (max-width:1024px) {
+    .bg_sub05_1{background-image: url('../img/sub05/mb_tit_bg.jpg');} /* 뮤직 비디오 */
+    .bg_sub05_3{background-image: url('http://silver0.co.kr/starENT/img/sub05/sub05_03_mb_bg.jpg');} /* 공지사항 */ 
+    .bg_sub06_1{background-image: url('../img/sub06/mb_tit_bg.jpg');} /* 스타쉽스토어 */
+}
+@media screen and (max-width:1000px){
+    .price_info, .music_video{flex-direction: column;}
+    .music_video .video_box, .video_slide{width: 100%;}
+    .video_slide .music_list li{flex-direction: row;}
+    .video_slide .music_list li a{margin-bottom: 0; margin-top: 10px;}
+    .video_slide .music_list li a:last-child{margin-left: 20px;}
+}
+@media screen and (max-width:900px) {
+    /* 뮤직비디오 */
+    .list_slides{margin-top: 30em;}
+    /* 스타쉽 스토어 페이지 */
+    .best_item .item_list{grid-template-columns: repeat(3, 1fr); row-gap: 5em;}
+    
+
+    .new_limit{margin-top: 0.5em; justify-content: left;}
+    .item_list> li:hover .over_icon > ul{opacity: 0; visibility: hidden;}
+    .item_list> li figure:hover img{transform: scale(1);}
+    
+    
+}
+
+@media screen and (max-width:600px) {
+    .music_video .video_box li, video, iframe{height: 350px;}
+    /* 스타쉽 스토어 페이지 */
+    .best_item .item_list{grid-template-columns: repeat(2, 1fr);}
+    /* 리스트*/
+    .item_list > li:nth-child(n+5){display: none;}
+    .best_item > .icon_arrow{display: block;}
+    /* 스토어 버튼 */
+    .swiper-slide .swiper-slide-next{margin-top: 0;}
+    .store_btn{display: none;}
+    .mb_store_btn{display: block; }
+    .best_box .top{margin-top: 4em;}
+}
+@media screen and (max-width:500px){
+    .music_video .video_box li, .music_video .video_box li video, iframe{height: 250px;}
+}
+@media screen and (max-width:400px){
+    .swiper-slide .swiper-slide-next{margin-top: 0;}
+    .pageNum.swiper-pagination-fraction{width: 50%;}
+    .best_item .item_list{column-gap:1em}
+    .music_video .video_box li, .music_video .video_box li video{height: 200px;}
+    
+}

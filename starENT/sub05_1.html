@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뮤직비디오</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon-precomposed" href="img/main/starship_favicon.png">
+    <link rel="shortcut icon" href="img/main/starship_favicon.png">
+    <!-- 구글 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,700,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,200,0,0" />    <!-- 자바스크립트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/sub01.js"></script>
+    <script src="./js/sub05.js"></script>
+    <script src="./js/jquery.touchSwipe.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <? include "header.html" ?>
+    <div class="contents">
+        <!-- 페이지 이름 -->
+        <div class="page_tit">
+            <div class="tit_bg mv">
+                <div class="bg_sub05_1"></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="layout">
+                <h2 class="title">MUSIC&nbsp;&nbsp;VIDEO</h2>
+                <!-- 가수 이름 -->
+                <div class="art_name swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#1">케이윌</a></li>
+                        <li class="swiper-slide"><a href="#2">아이브</a></li>
+                        <li class="swiper-slide"><a href="#3">몬스타엑스</a></li>
+                        <li class="swiper-slide"><a href="#4">우주소녀</a></li>
+                        <li class="swiper-slide"><a href="#5">브라더수</a></li>
+                        <li class="swiper-slide"><a href="#6">정세운</a></li>
+                        <li class="swiper-slide"><a href="#7">크래비티</a></li>
+                    </ul>
+                </div>
+                <!-- 뮤직비디오 -->
+                <h2 class="mv_title">Love Blossom</h2>
+                <div class="box">
+                    <!-- 케이윌 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe  src="https://www.youtube.com/embed/iRGOb6aKcgw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe></li>
+                                <li><iframe src="https://www.youtube.com/embed/alZ9hvgfIk4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe  src="https://www.youtube.com/embed/PdUiCJnRptk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe  src="https://www.youtube.com/embed/KFSzMegd7hs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms0 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="0">
+                                            <img src="./img/sub05/bg_kwill_lb.jpg" alt="케이윌 Love Blossom">
+                                            <div class="music_tit youtube_tit">Love Blossom</div>
+                                        </a>
+                                        <a href="#" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_kwill_01.jpg" alt="케이윌 촌스럽게 왜이래">
+                                            <div class="music_tit youtube_tit">촌스럽게 왜이래</div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="2">
+                                            <img src="./img/sub05/bg_kwill_p.jpg" alt="케이윌 이러지마 제발">
+                                            <div class="music_tit youtube_tit">이러지마 제발</div>
+                                        </a>
+                                        <a href="#" data-n="3">
+                                            <img src="./img/sub05/bg_kwill_h.jpg" alt="케이윌 가슴이 뛴다">
+                                            <div class="music_tit youtube_tit"> 가슴이 뛴다</div>
+                                        </a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p0"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg0"></div>
+                                <div class="mv_next swiper-button-next sb_n0"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 아이브 -->
+                    <div class="music_video">
+                        <div class="video_box videoE">
+                            <ul>
+                                <li><video class="mv musicv" poster="./img/sub05/bg_ive_kitsch.jpg" controls loop><source src="./img/sub05/video/mv_ive_iam.mp4"></video></li>
+                                <li><video class="mv musicv" poster="../img/sub05/bg_ive_iam.jpg" controls loop><source src="./img/sub05/video/mv_ive_iam.mp4"></video></li>
+                                <li><video class="mv musicv" poster="./img/sub05/bg_ive_afterlike.jpg" controls loop><source src="./img/sub05/video/mv_ive_after.mp4"></video></li>
+                                <li><video class="mv musicv" poster="./img/sub05/bg_ive_kitsch.jpg" controls loop><source src="./img/sub05/video/mv_ive_after.mp4"></video></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms1 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="0">
+                                            <img src="./img/sub05/bg_ive_kitsch.jpg" alt="아이브 kitsch">
+                                            <div class="music_tit">kitsch</div>
+                                        </a>
+                                        <a href="#" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_ive_iam.jpg" alt="아이브 아이엠">
+                                            <div class="music_tit">I AM</div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="2">
+                                            <img src="./img/sub05/bg_ive_afterlike.jpg" alt="아이브 after like">
+                                            <div class="music_tit">After like</div>
+                                        </a>
+                                        <a href="#" data-n="3">
+                                            <img src="./img/sub05/bg_ive_kitsch.jpg" alt="아이브 kitsch">
+                                            <div class="music_tit">kitsch</div>
+                                        </a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p1"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg1"></div>
+                                <div class="mv_next swiper-button-next sb_n1"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 몬스타엑스 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe  src="https://www.youtube.com/embed/yY13X0BKaUw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe src="https://www.youtube.com/embed/r1afdZk0qcI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms2 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#a" data-n="0">
+                                            <img src="./img/sub05/bg_monstar_1.jpg" alt="몬스타엑스 GAMBLER">
+                                            <div class="music_tit youtube_tit">GAMBLER</div>
+                                        </a>
+                                        <a href="#a" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_monstar_2.jpg" alt="몬스타엑스 DRAMARAMA">
+                                            <div class="music_tit youtube_tit">DRAMARAMA</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p2"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg2"></div>
+                                <div class="mv_next swiper-button-next sb_n2"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 우주소녀 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe src="https://www.youtube.com/embed/rVeMvBTd8vQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe src="https://www.youtube.com/embed/2Q9G6R2hKIQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms3 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#a" data-n="0">
+                                            <img src="./img/sub05/bg_wjsu_bu.jpg" alt="우주소녀 Boogie Up">
+                                            <div class="music_tit youtube_tit">Boogie Up</div>
+                                        </a>
+                                        <a href="#a" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_wjsu_w.jpg" alt="우주소녀 이루리">
+                                            <div class="music_tit youtube_tit">이루리</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p3"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg3"></div>
+                                <div class="mv_next swiper-button-next sb_n3"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 브라더슈 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe src="https://www.youtube.com/embed/Ejs2u5z-I5k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe src="https://www.youtube.com/embed/o8p820Q_kmo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms4 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#a" data-n="0">
+                                            <img src="./img/sub05/bg_su_1.jpg" alt="소유, 브라더수 You don't know me-그녀는 예뻤다OST">
+                                            <div class="music_tit youtube_tit">You don't know me<br>그녀는 예뻤다OST</div>
+                                        </a>
+                                        <a href="#a" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_su_2.jpg" alt="브라더수 마들렌">
+                                            <div class="music_tit youtube_tit">Madeleine</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p4"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg4"></div>
+                                <div class="mv_next swiper-button-next sb_n4"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 정세운 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/gigORGNGnwY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/VED_cqxthf4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms5 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#a" data-n="0">
+                                            <img src="./img/sub05/bg_jsw_ju.jpg" alt="정세운 JUST U with Sik-K">
+                                            <div class="music_tit youtube_tit">JUST U with Sik-K</div>
+                                        </a>
+                                        <a href="#a" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_jsw_ba.jpg" alt="정세운 BABY IT'S U">
+                                            <div class="music_tit youtube_tit">BABY IT'S U</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p5"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg5"></div>
+                                <div class="mv_next swiper-button-next sb_n5"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 크래비티 -->
+                    <div class="music_video">
+                        <div class="video_box ">
+                            <ul class="youtube_box">
+                                <li><iframe  src="https://www.youtube.com/embed/iRGOb6aKcgw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe src="https://www.youtube.com/embed/alZ9hvgfIk4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe  src="https://www.youtube.com/embed/PdUiCJnRptk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                                <li><iframe  src="https://www.youtube.com/embed/KFSzMegd7hs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                            </ul>
+                        </div>
+                        <div class="video_slide">
+                            <div class="music_list ms6 swiper-container">
+                                <ul  class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="0">
+                                            <img src="./img/sub05/bg_kwill_lb.jpg" alt="케이윌 Love Blossom">
+                                            <div class="music_tit youtube_tit">Love Blossom</div>
+                                        </a>
+                                        <a href="#" class="active" data-n="1">
+                                            <img src="./img/sub05/bg_kwill_01.jpg" alt="케이윌 촌스럽게 왜이래">
+                                            <div class="music_tit youtube_tit">촌스럽게 왜이래</div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#" data-n="2">
+                                            <img src="./img/sub05/bg_kwill_p.jpg" alt="케이윌 이러지마 제발">
+                                            <div class="music_tit youtube_tit">이러지마 제발</div>
+                                        </a>
+                                        <a href="#" data-n="3">
+                                            <img src="./img/sub05/bg_kwill_h.jpg" alt="케이윌 가슴이 뛴다">
+                                            <div class="music_tit youtube_tit"> 가슴이 뛴다</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="prev_next_btn">
+                                <div class="mv_prev swiper-button-prev sb_p6"><span class="material-symbols-rounded">arrow_back_ios</span></div>
+                                <div class="swiper-pagination pageNum pg6"></div>
+                                <div class="mv_next swiper-button-next sb_n6"><span class="material-symbols-rounded">arrow_forward_ios</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/swiperJS/swiper.min.js"></script>
+
+    <!-- footer -->
+    <? include "footer.html" ?>
+</body>
+</html>

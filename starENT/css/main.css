@@ -1,0 +1,286 @@
+@charset "utf-8";
+.layout.m{max-width: 1440px; margin: 0 auto;}
+
+/* 블릿버튼 */
+ul[class*=slide_btn]{display: flex; justify-content: center; margin-top: 1.2em; }
+ul[class*=slide_btn] li a{display: block; width: 1em; height: 1em; transition: all 0.3s; border-radius: 50%; text-indent: -9999px; margin: 0 0.3em; background: #ddd;}
+ul[class*=slide_btn] li a.active{width: 3em; border-radius: 20px; background-color: #ffa200;}
+/* 이전버튼 다음버튼 */
+.prev, .next{cursor: pointer; border: 2px solid #ffa200; transition: all 0.3s; border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); color: #ffa200;}
+/* 바로가기 및 View More 버튼 */
+.more_btn a{font-size: 1.35em; color: #333; display: block; }
+ion-icon.arrow{color: #FF6D4D; font-size: 1.6em; vertical-align: top; margin-left: 0.2em;}
+
+
+/* contents */
+/****** 슬라이드 ******/
+#main_slide{position: relative; top: 0.5em; overflow: hidden; z-index: 0;} 
+.slide{position: relative;  width: 100%; overflow: hidden;}
+.slide ul{width: 100%; padding-top:24.39%; position: relative;}
+.slide ul li{position: absolute; width: 100%; left: 100%; top: 0;}
+.slide ul li:first-child{left: 0;}
+.slide ul li a{display: block;}
+.slide ul li img{width: 100%;}
+.mb_slide{display:none;}
+/* 슬라이드 이전 다음 버튼 */
+.m_btn{position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.slide_btn2{display: flex; justify-content: space-between;}
+.m_btn span{font-size: 3em; cursor: pointer; border: 2px solid #ffa200; transition: all 0.3s; border-radius: 50%; color: #ffa200; }
+
+#main_slide .list_btn{position: absolute; bottom: 1em; left: 0; width: 100%; display: flex;  justify-content: center; }
+/* 슬라이드 정지 버튼 */
+#main_slide .play_btn{z-index: 100; margin-top: 10px; margin-left: 15px; cursor: pointer; border-radius: 50%; box-shadow: 0 0 3px rgb(0, 0, 0, 0.5); width: 25px; height: 25px; }
+#main_slide .play_btn img{width: 100%; }
+
+/****** new album ******/
+#new_album{position: relative; z-index: 0;}
+/* title */
+#new_album .tit{display: flex; justify-content: space-between; margin-top: 3em; align-items: center;}
+#new_album .tit h2{font-size: 1.6em;}
+/* 앨범 리스트 */
+#new_album .album{position: relative; overflow: hidden;  padding: 5em 0 2em; z-index: 1;}
+#new_album .album_list .swiper-slide{width: 34%; text-align: center;}
+#new_album .album_list li a{display: block; position: relative;}
+#new_album .album_list li img{width: 70%; padding-top: 20%;}
+#new_album .album_list li.swiper-slide-active img{width: 90%; padding-top: 0;}
+/* 앨범 정보 */
+#new_album .album_info{display: none; color: #333; margin-top: 0.5em; font-size: 1.2em;}
+#new_album .album_info time{display: block; text-align: right; margin-right: 2em; }
+#new_album .album_info time, #new_album .album_info span{color: #444; font-size: 0.9em;}
+#new_album .album_info strong{display: block; font-weight: 500; font-size: 1em; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+#new_album .album_info p{color: #555; width: 100%; text-align: left; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box;  -webkit-box-orient: vertical; -webkit-line-clamp: 3; font-size: 0.9em;}
+/* new album view */
+#new_album .album_list li.swiper-slide-active .album_info{display: block;}
+/* 이전 다음 버튼 */
+#new_album .prev, #new_album .next{font-size: 3em; top: 42%; z-index: 500;}
+#new_album  .prev{left: 29%;}
+#new_album  .next{right:29%;}
+
+
+/****** 가수 배우 영역 ******/
+#art_list{width: 100%; height: auto; background: #f2f2f2; position: relative; margin-top: 2em; padding-bottom: 1.5em;}
+#art_list .box{padding-bottom: 5em; }
+/* #art_list .act_box{display: none;} */
+#art_list .list{width: calc(100% - 100px); margin: 0 auto;}
+
+/* 탭버튼 */
+.tab_btn{position: relative;}
+.tab_btn ul{display: flex; justify-content: center; margin-bottom: 3em;}
+.tab_btn li{text-align: center; position: relative; width: 78px; z-index: 200;} 
+.tab_btn li a{display: block; position: relative;  padding:10px 12px; font-size: 1.3em; font-weight: 500; color: #888;}
+/* 탭버튼 활성화 시 */
+.tab_btn li.tab_v a{color: #ffa200;}
+
+.tab_line{width: 155px;  height: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); border-radius: 20px; z-index: 1;}
+.line1{position: relative; top: 0; left: 50%;}
+.line1::after{content: ''; width: 50%; display: block; background: #888; height: 4px; border-radius: 20px;  }
+.line2{position: relative; top: 44px; }
+.line2::after{content: ''; width: 50%; display: block; background: #ffa200; height: 4px; border-radius: 20px;  }
+/* 연예인 리스트 */
+#art_list .layout{position: relative; z-index: 0;}
+#art_list a{display: block; text-align: center;}
+/* 연예인 이미지 */
+#art_list .list ul li img{width: 75%;  height: auto;  border-radius: 20px;}
+#art_list .list .name{margin-top: 1em;}
+#art_list .list .name *{display: block; color: #333; text-align: center; font-weight: 500; font-size: 1.5em;}
+#art_list .list .name span.eg{font-size: 1em; font-weight: 400;}
+/* 좌우버튼 */
+#art_list .prev, #art_list .next{font-size: 3em; z-index: 500; top: 50%;}
+#art_list .prev{left: 0;}
+#art_list .next{right: 0;}
+/* 블릿버튼 */
+#art_list .list_btn{width: 100%; text-align: center; margin-top: 3.5em;}
+#art_list .list_btn span.swiper-pagination-bullet{width: 1em; height: 1em; background: #888; margin: 0 0.3em; transition: all 0.3s;}
+#art_list .list_btn span.swiper-pagination-bullet-active{background-color: #ffa200; border-radius: 20px; width: 3em;}
+/* 오버시 */
+#art_list .list ul li:hover figure img{box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);}
+
+/****** 오디션 지원 ******/
+#aud{overflow: hidden; background: url('../img/main/audition_bg.jpg') no-repeat 0 bottom/cover; position: relative; width: 100%; padding-top:24.12%;  text-align: center; color: #fff; font-size: 20px; font-weight: 300; }
+#aud > #a_con{position: absolute; top: 50%; transform: translate(-50%, -50%); left: 50%;}
+#aud > #a_con > .tit{margin-bottom: 1.3em;}
+#aud .tit > p > span{color: #ffa200;}
+#aud .tit > strong{font-size: 1.2em; font-weight: 500;}
+#aud .a_btn{margin-top: 3em; display: inline-block; vertical-align: middle; }
+#aud .a_btn > a{display: block; color: #fff; }
+#aud .a_btn a .arrow{margin-left: 0.4em; color: #fff; }
+
+
+/****** 뮤직비디오 공지사항 스토어 ******/
+#mns_con{display: flex;  justify-content: space-around; margin-top: 3em; }
+.top_t{display: flex; justify-content: space-between; align-items: end;}
+.top_t > .tit h2{font-size: 1.9em; font-weight: 500; color: #ff6d4d;}
+.top_t > .tit p{font-size: 1.2em;} 
+/* 뮤직비디오 */
+ .mv_con{width:50%;  border-radius: 30px; box-sizing: border-box; padding: 2em; border: 1px solid #888;}
+.mv_con > .con{width: 100%; overflow: hidden; margin-top: 10px;}
+.mv_box > .mv_list{display: flex; justify-content: center;}
+.mv_box > .mv_list li{height: 400px; background: #000; position: relative;overflow: hidden;} 
+.mv_box > .mv_list li:not(:first-child) video {display: none;}
+.mv_box > .mv_list li .mv{width: 100%; height: 400px; }
+.mv_box > .mv_list li video.mv[poster]{width: 100%; height: 100%;}
+/* 뮤직비디오 재생 버튼 */
+.mv_box{position: relative;}
+.mv_box .ps_btn{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);cursor: pointer; width: 2.8em; opacity: 0; height: 2.8em; transition: all 0.3s; border-radius: 50%; box-shadow: 0px 0px 10px #c0c0c05e; background: #fff; }
+.mv_box .ps_btn span{  color: #0f0f0f; border-radius: 50%;  font-size: 3.5em;transform: translate(-5px, -4px); }
+.mv_box:hover .ps_btn{opacity: 1;}
+
+/****** 공지사항 스토어 ******/
+.ns_con{width: 40%; display: flex;   flex-direction: column; justify-content: space-between;}
+/* 공지사항 */
+.ns_con > .notice, .ns_con > .store{box-sizing: border-box; padding: 1.5em; position: relative; border: 1px solid #FF6D4D; background: #FFF1EE; border-radius: 15px;}
+.ns_con > .notice > .con{display: flex; align-items: center; padding: 1em 0}
+.ns_con > .notice > .con >.note_c{margin-left: 0.9em; overflow: hidden;}
+.ns_con > .notice .note_c a{font-size: 1.2em; font-weight: 500; color: #333; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.ns_con > .notice .more_btn{float: right;}
+/* 스토어 */
+.store{display: flex; flex-direction: column; height: 50%; position: relative;}
+.store h2 span{font-size: 0.65em; display: block; font-weight: 400; margin-bottom: -0.3em;}
+.store .more_btn{position: absolute; bottom: 1.2em; }
+.store figure{width:30%; position: absolute; right: 1.8em; bottom: 1.2em;}
+.store figure img{width: 100%; }
+
+
+/* 반응형 */
+@media screen and (min-width:1024px){
+    /* 이전버튼 다음버튼 */
+    .prev, .next, .m_btn span{color: #888; border-color:#888;}
+    .prev:hover, .next:hover,  .m_btn span:hover{color: #ffa200; border-color: #ffa200;}
+    /* 앨범 리스트 */
+    #new_album .album{max-width: 1200px;}
+    /* 가수 */
+    #art_list .list ul li::after{content:''; display: block; width: 0; left: 50%; transform: translateX(-50%); transition: all 0.3s; height: 3px; background: #ffa200; border-radius: 20px; position: absolute; bottom: 55px;}
+    #art_list .list ul li:hover::after{width: 70%;}
+
+}
+
+/* 1024px */
+@media screen and (max-width:1024px){
+    /* display none */
+    .ns_con figure, .ns_con .notice .con, .btn_text{display: none;}
+    .slide ul{padding-top: 25%;}
+    
+    /*슬라이드 */
+    .slide ul{padding-top: 52.08%;}
+    .pc_slide{display:none}
+    .mb_slide{display:block}
+
+
+    /* 앨범 정보 */
+    #new_album .album_info{font-size: 1.1em;}
+    #new_album .album_info time{margin-right: 0.6em;}
+    
+    /* 연예인*/
+    /* #art_list .list .name *{font-size: 1.2em;}
+    #art_list .list{width: calc(100% - 25%);}
+    #art_list .list ul li img{width: 80%;}
+    #art_list .prev{left: 5%;}
+    #art_list .next{right: 5%;} */
+    .art_box > ul > li > a > p{opacity: 1; text-shadow: 0 0 5px #222222e3;}
+    .art_box > ul > li > a:hover::after{display: none;}
+
+    /* 지원하기 영역 */
+    #aud{padding-top: 40%;}
+    #aud .a_btn a .arrow{font-size:2em;   --ionicon-stroke-width: 16px; vertical-align:middle;}
+    #aud > #a_con p{font-size: 0.9em;}
+
+    /* 뮤직비디오 공지사항 스토어 */
+    #mns_con{flex-direction: column; justify-content: center; margin: 20px;}
+    .mv_con, .ns_con{width: 100%;}
+
+    /* 공지사항 스토어 */
+    .ns_con{flex-direction: row; margin-top: 20px;}
+    .notice{width: 43%; }
+    .store{height: auto; width: 55%;}
+    .store .store_ba{justify-content: flex-end;}
+    .store_ba{margin-top: -20px;}
+
+    /* 바로가기 버튼 */
+    .notice .more_btn, .store .more_btn{position: absolute;  right: 1em; bottom: 1em;}
+    ion-icon.arrow{font-size: 2.8em;   --ionicon-stroke-width: 16px; margin: 0; z-index: 20;}
+    .more_btn img{width: 1.5em;}
+}
+@media screen and (max-width:800px){    
+    /* 앨범 */
+    #new_album .album_info{font-size: 1em;}
+}
+/* 768px */
+@media screen and (max-width:768px){
+    /* 슬라이드*/
+    .m_btn span{font-size: 2.5em; }
+
+
+    /* 공지사항 및 스토어 */
+    .ns_con .notice, .ns_con > .store{padding: 1em 1em 3em; }
+    ion-icon.arrow{font-size: 2.2em;}
+    .notice .more_btn, .store .more_btn{bottom: 0.5em; right: 0.5em;}
+    #art_list .list ul li img{width: 30%;}
+
+
+    /* 앨범 내용*/
+    /* title */
+    #new_album{overflow: hidden;}
+    #new_album .album .swiper-slide{width:50%; margin: 0 1%;}
+    #new_album .album_list li img{opacity: 0.3; width: 80%;}
+    #new_album .album_list li.swiper-slide-active img{opacity:1; width: 100%;}
+    #new_album .album_info strong{text-align: left; }
+    #new_album .album_info p{display: none;}
+    /* 이전 다음 버튼 */
+    #new_album .album .prev, #new_album .album .next{top: 47%; }
+    #new_album .album .prev{left: 16%;}
+    #new_album .album .next{right:16%;}
+ /* 연예인 리스트 */
+    #art_list .list .name .eg{font-size: 0.6em;}
+    #art_list .artists_list ul li img{width:40%;}
+    #art_list .actors_list ul li img{width: 80%;}
+    #art_list .art_box .prev{left: 20%;}
+    #art_list .art_box .next{right: 20%;}
+
+    /* 지원하기 영역 */
+    #aud{padding-top: 70%;}
+
+
+}
+@media screen and (max-width:650px){
+    /* 뮤직비디오 */
+    .mv_list li, .mv_list li .mv{height: 300px; }
+}
+@media screen and (max-width:480px){
+    /* 앨범 */
+    /* 이전 다음 버튼 */
+    #new_album .album .prev{left: 12%;}
+    #new_album .album .next{right: 12%;}
+
+    /* 지원하기 영역 */
+    #aud{padding-top: 90%;}
+    #aud .a_btn a .arrow{font-size:1.6em;}
+    #aud > #a_con p{font-size: 0.8em;}
+    #aud .a_btn > a{font-size: 0.95em;}
+    
+    /* 뮤직비디오 */
+    .mv_con{border: none; padding: 10px;}
+    .mv_list{margin-top: 10px;}
+    .mv_box > .mv_list li, .mv_list li .mv{height: 200px; }
+}
+@media screen and (max-width:360px) {
+    /* 공지사항 및 스토어 폰트 사이즈 */
+    .ns_con .top_t > .tit h2{font-size: 1.5em;}
+    .ns_con .top_t > .tit p{font-size: 0.9em;} 
+
+    /* 연예인이미지 */
+    #art_list .artists_list ul li img{width:80%;}
+    #art_list .actors_list ul li img{width: 90%;}
+    #art_list .art_box .prev{left: 5%;}
+    #art_list .art_box .next{right: 5%;}
+    #art_list .list .name *{ font-size: 1.2em;}
+    #art_list .list .name span.eg{font-size: 0.9em; }
+
+    /* 지원하기 */
+    
+    
+    
+
+}
+
+
+

@@ -1,0 +1,98 @@
+@charset "utf-8";
+.bg_sub01_1{background-image: url('../img/sub01/pc_tit_bg.jpg');}
+/* 내용 */
+/* 회사 설명 */
+.sub01_1 .con_intro{display: flex; justify-content: space-between; position: relative; padding:5em 0 8em;}
+.con_intro .starin_img{width: 45%; position: relative; margin-top: -5em;}
+.con_intro .starin_img ul{position: relative; margin-top: 1em; opacity: 0; transform: translateY(-30%); transition: all 0.3s;}
+.con_intro .starin_img ul.fade{opacity: 1; transform: translateY(0);}
+.con_intro .starin_img ul li{position: absolute; width: 250px;  right: 1.2em;  top: 0.5em;}
+.con_intro .starin_img ul li:nth-child(2){width: 200px;  right:17.5em; top:9em;}
+.con_intro .starin_img ul li:nth-child(3){width: 150px; right:9em; top: 17.8em;}
+.con_intro .starin_img ul li img{width: 100%;}
+
+.con_intro .info{width:40%;} 
+.con_intro .tit h3{color: #ffa200; font-size: 2em; font-weight: 500;}
+.con_intro .tit span{display: block;  margin-bottom: 2.5em;  font-size: 1.2em; color: #888;}
+.con_intro .content p{margin-top: 1em; font-size: 1.2em; }
+
+/* ci */
+#con_ci{width: 100%; background: #f2f2f2; padding: 3em 0;}
+#con_ci .layout{display: flex; justify-content: space-between; align-items: center; }
+/* 제목 */
+#con_ci .tit{width: 50%; text-align: center; color: #FF6D4D; font-size: 1.5em;}
+#con_ci .tit h3{color: #ffa200; font-size: 1.4em;}
+#con_ci .tit p{font-size: 0.9em;}
+/* ci 정보 */
+#con_ci .layout strong{font-size: 1.5em; font-weight: 500;}
+#con_ci .layout figure{ margin: 3em 0 2em;}
+#con_ci .layout img{width: 100%; box-shadow: 0 3px 3px rgba(90, 90, 90, 0.315);}
+#con_ci  .ci{display: flex; justify-content: space-around; text-align: justify;}
+.ci > div{width: 35%; }
+#con_ci .ci .con{color: #666;}
+/* 더보기 버튼 */
+#con_ci .icon_arrow{ display: none; text-align: center; width: 100%;}
+.material-symbols-sharp.arrow_p{font-size: 3.5em; cursor: pointer; color: #FF6D4D; display: inline-block;}
+
+/* 오시는 길 */
+.con_map h2{padding: 20px 0; font-size: 2em; font-weight: 500; color: #ffa200; text-align: center;}
+.icon_arrow_r{display: none;}
+.icon_arrow_r a{display: block;}
+/* 지도 크기 */
+.map{width: 100%; height: 650px; background: #ddd;}
+/* 정보 */
+.con_map .add{display: flex; justify-content: space-around; margin-top: 20px;}
+.star_add, .king_add{width: 45%;}
+.con_map .add h3{color: #FF6D4D; font-size: 1.5em; font-weight: 500; margin-bottom: 20px;}
+.con_map .add ul span.icon{border: 2px solid #FF6D4D; vertical-align: middle; padding: 5px; box-sizing: border-box; border-radius: 50%; color: #FF6D4D; font-size: 2.2em;}
+.con_map .add ul li{display: flex; align-items: center; margin: 20px 0;width: 100%; }
+.con_map .add ul li span.text{padding-left: 10px; display: block;}
+
+
+/* 반응형 */
+/* max 1024px */
+@media screen and (max-width:1024px) {
+    /* display : none 처리 */
+    #con_ci .tit p{display: none;}
+    /* 제목 */
+    .bg_sub01_1{background-image: url('../img/sub01/mb_tit_bg.jpg');}
+    .con_intro .starin_img{display: none;}
+    .con_intro .info{width: 100%;}
+    /* 회사소개 */
+    .sub01_1 .con_intro{padding:0 2em 5em;}
+    /* ci */
+    #con_ci .layout strong{font-size: 1.5em;}
+    /* 지도 */
+    .con_map{box-sizing: border-box; padding: 2em;}
+    .map{height: 500px;}
+}
+/* max 768px */
+@media screen and (max-width:768px) {
+
+    /* ci */
+    #con_ci .layout, #con_ci  .ci{flex-direction: column;}
+    #con_ci .layout{box-sizing: border-box; padding: 0 2em;}
+    #con_ci  .ci{width: 80%; padding-top: 3em; box-sizing: border-box;}
+    #con_ci  .ci .con{display: none; margin-bottom: 1.5em;}
+    #con_ci .icon_arrow{display: block;}
+    .ci > div{width: 100%; margin-bottom: 4em; }
+    #con_ci .layout figure{ margin: 2em 0;}
+
+    /* 지도 */
+    .map_tit{display: flex; justify-content: center; align-items: center;}
+    .icon_arrow_r{display: block;}
+    .icon_arrow_r > a .arrow_r{font-size: 2.8em; line-height: normal; margin-left: 10px; color: #FF6D4D;}
+    .map{display: none;}
+    .con_map .add{flex-direction: column; width: 100%;}
+    .star_add, .king_add{width: 100%;}
+    .con_map .add ul span.icon{font-size: 2em;}
+    
+}
+@media screen and (max-width:380px){
+    .con_intro .tit h3 {font-size: 1.8em;}
+    #con_ci .layout strong{font-size: 1.3em; white-space: normal;}
+
+    #con_ci .ci{width: 100%;}
+
+}
+

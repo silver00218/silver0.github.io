@@ -1,0 +1,71 @@
+@charset "utf-8";
+body{background: url('../img/login/bg.jpg') no-repeat 0 0 /cover; font-family: 'Noto Sans KR', sans-serif; }
+.layout{max-width: 1000px;  margin: 0 auto;}
+header,footer{display: none;}
+.login_box{width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.801); position: relative;}
+.login_box .box{display: flex; justify-content: space-around; align-items: center; min-height: 100%;}
+header{display: none;}
+/* 메인페이지 바로가기 icon */
+.main_h a{display: block; position: absolute; width: 30px; right: 20px; top: 20px;}
+.main_h a img{width: 100%;}
+/* title */
+.login_box .title{width: 55%;  margin: 0; color: #fff;}
+.login_box .t_box h2{font-size:6em;  font-weight: 400; text-align: left; color: #fff;}
+.login_box .title h3{font-size: 5em; color: #ffa200; font-weight: 400; margin-top: -20px;}
+.login_box .title p{font-size:1.7em; font-weight:200;}
+/* login id, pwd 입력 */
+#login{ width: 40%;  background: #fff;  border-radius: 20px; padding:3.5em 2em; box-sizing: border-box;}
+#login h2{text-align: center; margin-bottom: 1em; font-size: 2.5em;}
+#login li{position: relative;}
+#user_id, #user_pw{ border: 1px solid #f5f5f5; border-radius: 5px; text-indent: 15px; padding: 18px 0; width: 100%; outline: none; background: #f5f5f5; margin-bottom: 15px; transition: all 0.3s;}
+#user_id:focus, #user_pw:focus{border: 1px solid #ffa200; box-shadow:0px 2px 4px rgba(255, 162, 0, 0.396), 0px -2px 4px rgba(255, 162, 0, 0.396)}
+#user_pw + label{position: absolute; top: 45%; transform: translateY(-50%); right: 10px; cursor: pointer;}
+#id_ch{display: none;}
+#id_ch + label{cursor: pointer;}
+#check{width: 20px; height: 20px; vertical-align: top; margin-right: 10px; background: url('../img/login/login_checkbox.png') no-repeat 0 0/cover; display: inline-block; cursor: pointer; transition: all 0.3s;} 
+#id_ch:checked + label > #check{background-image: url('../img/login/login_cheked.png');}
+/* btn */
+#login_btn{border-radius: 20px; margin: 30px 0 10px; border: none; overflow: hidden; padding: 10px 0; width: 100%; outline: none; cursor: pointer;  background: linear-gradient(125deg,#FF6D4D,  #ffa200, #FF6D4D) no-repeat right/200%; font-size: 1.3em; color: #fff; transition: all 0.3s;}
+#login_btn:hover{background-position: left;}
+/* lg_join & id find & pwd find */
+.lg_join{display: flex; justify-content: center; }
+.lg_join li{position: relative; padding: 0 8px;}
+.lg_join li::after{display: block; content: ''; height: 13px; top: 50%; border-right: 1px solid #555; right: 0px; position: absolute; transform: translateY(-50%);}
+.lg_join li:last-child::after{display: none;}
+#id_ch + label, .lg_join li a{color: #555;}
+#id_ch + label:hover, .lg_join li:hover a{text-decoration: underline;}
+/* simple login */
+.lg_simple_login{text-align: center; overflow: hidden; margin-top: 3.5em; margin-bottom: 1em;}
+.lg_simple_login h3{position: relative; display: inline-block; padding: 0 20px; margin-bottom: 20px;}
+.lg_simple_login h3::before{position: absolute; width: 100px; border-top: 1px solid #ccc; left: -100px; top: 50%; display: block; content: '';}
+.lg_simple_login h3::after{position: absolute; width: 100px; border-top: 1px solid #ccc; right: -100px; top: 50%; display: block; content: '';}
+.lg_simple_login ul{display: flex; justify-content: center; padding: 5px 0;}
+.lg_simple_login ul li{margin: 0 10px; width: 45px; height: 45px; border-radius: 50%; overflow: hidden;  transition: all 0.3s;}
+.lg_simple_login ul li a{display: block; }
+.lg_simple_login ul li img{width: 100%; vertical-align: top;} 
+.lg_simple_login ul li:hover{box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);}
+
+.lg_box{display: none;}
+
+/* 미디어쿼리 */
+@media screen and (max-width:1160px) {
+    header, footer{display: block;}
+    .main_h, .box .title{display: none;}
+    .login_box{background:none; height: auto;}
+    body{background-image: none;}
+    .login_box .box{flex-direction:column; min-height:auto; margin-top: 2em;}
+    #login{width: 60%; padding: 0;}
+    .lg_box{display: block; position: relative; width: 100%; padding-top: 400px; background: url('../img/login/bg.jpg') no-repeat 0 0 /cover; }
+    .lg_box .lg_bg{width: 100%; background-color: rgba(0, 0, 0, 0.801); padding-top: 400px; position: absolute; top: 0;}
+    .lg_box .mb_tit{width: 100%;   position: absolute; top: 50%; transform: translateY(-50%); text-align: center;}
+    .login_box .mb_t_box h2{font-size:4.5em; text-align: center;}
+.login_box .mb_tit h3{font-size: 3.5em;}
+.login_box .mb_tit p{font-size:1.5em; margin-top: 10px;}
+    
+}
+@media screen and (max-width:450px){
+    #login{width: 90%;}
+    .login_box .mb_tit h2{font-size:3em;}
+    .login_box .mb_tit h3{font-size: 2em; margin-top: -8px;}
+    .login_box .mb_tit p{font-size:1.2em; margin-top: 10px;}
+}
