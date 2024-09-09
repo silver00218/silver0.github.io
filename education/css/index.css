@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap');
+*{margin: 0; padding: 0;}
+body{background: #E8EFF5FF; color: #333; font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none; color: #333;}
+li{list-style: none;}
+img{border: 0; }
+.layout{max-width: 1440px; margin: 0 auto;}
+
+.h_top{width: 100%; height: 35px; line-height: 35px; background: #053863;} 
+.h_top p{color: #fff; display: flex; align-items: center;}
+.h_top .img_logo{background: url(https://www.moe.go.kr/img/2021Renewal/common/e-government.svg) no-repeat 0 center; display: block; width: 45px; height: 35px; margin-right: 3px;}
+
+header{width: 100%; background: #fff; position: relative;}
+header #logo{position: absolute; bottom: 0; width: 180px;}
+header #logo img{width: 100%;}
+
+header > .top{height: 50px; line-height: 50px;}
+#t_menu ul{display: flex;}
+
+/* contents */
+.contents{margin: 3em 0;}
+.contents > .t_con{display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 350px); gap: 2em;}
+.t_con > div{border-radius: 20px; background: #fff}
+.t_con > div:not(:first-child){padding: 1.2em; box-sizing: border-box;}
+h2[data-tit="1"]{text-align: center; font-weight: 500; font-size: 1.4em;}
+h2[data-tit="1"] > span{color:  #2E63C5;}
+/* slide */
+.t_con .slide{position: relative; overflow: hidden; width: 100%;}
+.t_con .slide ul{position: absolute; top: 0; left: 0; height: 100%;}
+.t_con .slide ul li{width: 100%; height: 100%;}
+.t_con .slide img{width: 100%;  height: 100%;}
+/* 주요메뉴 바로가기 */
+.dir_menu{margin-top: 1em;}
+.dir_menu ul{display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 85px); border: 1px solid gainsboro;}
+.dir_menu ul li{ width: 100%; height: 100%;  position: relative; transition: all 0.3s; overflow: hidden;}
+.dir_menu ul li:nth-child(-n+3){background: #e8f0fe;}
+.dir_menu ul li:nth-child(n+4):nth-child(-n+6){border-top:1px solid gainsboro; border-bottom:1px solid gainsboro;}
+.dir_menu ul li:nth-child(3n+2){border-right:1px solid gainsboro; border-left:1px solid gainsboro; z-index: 1;}
+.dir_menu ul li a{display: block;   width: 100%; height: 100%;}
+.dir_menu ul li span{ position: absolute; top: 50%; transform: translate(-50%, -50%); left: 50%;}
+.dir_menu ul li:hover{background: #D7E5FFFF;}
+/* 탭메뉴 */
+.tab_menu > .tit > ul{display: flex; border-bottom: 1px solid gainsboro; }
+.tab_menu > .tit > ul li a{display: block; font-size: 1.2em; font-weight: 500; color: #888; padding: 0 15px 8px; position: relative; transition: all 0.3s;}
+.tab_menu > .tit > ul li.active a, .tab_menu > .tit > ul li:hover a{color: #333;}
+.tab_menu > .tit > ul li a::after{content: ''; display: block; width: 0; height: 3px; left: 50%; transform: translateX(-50%); position: absolute; bottom: 0.3px; background: #2E63C5; border-radius: 20px; transition: all 0.3s;}
+.tab_menu > .tit > ul li.active a::after{width: 100%;}
+.tab_menu > .con > div:not(:first-child){display: none;}
+.tab_menu > .con{padding-top: 10px;}
+.tab_menu > .con ul li{padding: 10px 0; }
+.tab_menu > .con ul li a{display: flex; justify-content: space-between;  }
+.tab_menu > .con ul li strong{width: calc(100% - 120px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-indent: 18px; font-weight: 400; position: relative;}
+.tab_menu > .con ul li strong::before{content: '';display: block; width: 4px; height: 4px; border: 3px solid #c5c5c5; border-radius: 50%; position: absolute; top: 50%;transform: translateY(-50%);}
+.tab_menu > .con ul li span{width: 85px; color: #999;}
+.tab_menu > .con ul li:hover strong{text-decoration: underline;}

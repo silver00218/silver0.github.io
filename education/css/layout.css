@@ -1,0 +1,53 @@
+.root .layout{ max-width: 1440px;  height: 85px; position: relative;}
+/* 로고 */
+.root .layout h1{position:absolute;  top: 2.8em;  z-index: 120;}
+.layout  h1 a img{margin-top: 15px; width: 125px;  float: left;} 
+.layout h1 .logo a{display: block;}
+
+#header .layout .menu{height: 80px; float: left; overflow: hidden; }
+#header .layout .menu ul{position: relative; top: 50%; left: 0; transform: translateY(-35%);}
+#header .layout .menu ul li{display: inline-block; height: 20px; line-height: 20px;} 
+#header .layout .menu ul li a{ color: black;  font-size: 0.9rem; padding: 0px 12px; font-weight: 300; border-left: 1px solid gainsboro;}
+
+
+#header .layout .menu ul li a span{left: 5px; position: relative; top: 3px; font-size: 1rem;}
+#header .layout .menu ul li a:hover{color:#2E63C5FF;}
+#header .layout .menu ul li:first-child a{border-left: none; padding-left: 0px;}
+#header .layout .menu ul li ul li{display: none;position: absolute; top: auto; left: 0;}
+#header .layout .menu ul li:hover ul li{display: block; width: 100%; height: 300px; overflow-y: scroll; }
+
+/* 검색창 */
+#header .layout .search{width: 24rem; height: 3.5em; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 8;}
+#header .layout .search #search_text{ width: 24rem;  font-size: 0.9rem; height: 48px; padding-left: 20px; border: 1px solid gainsboro; outline: none; background: #f3f3f3; border-radius: 30px; display: block; z-index: 400;}
+.layout .search input[type="submit"]{cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); right: -3%; content: ""; display: block; width: 2em; height: 2em; border: none; background-size: contain; background: url(https://www.moe.go.kr/img/2021Renewal/common/search.svg) no-repeat center center;     text-indent: -1000px; overflow: hidden}
+#header .search .open{display: none; position: absolute;  text-indent: -1000px; overflow: hidden; background:url(https://www.moe.go.kr/img/2021Renewal/common/search.svg) no-repeat center center; background-size: contain; width: 1.4em; height: 1.4em;}
+#header .search .open input[data-v="on"]{z-index: 1; background:url(https://www.moe.go.kr/img/2021Renewal/common/mgnb_close.svg) no-repeat center center; width: 3em; height: 3em; display: block;}
+
+/* sns */
+#header .layout .sns{position:absolute; top: 50%; right: 0;  transform: translateY(-50%);}
+.layout .sns li{display: inline-block;  border-radius: 50%;}
+.sns li a{width: 1.9em; height:1.9em; content: ""; display: block;}
+.sns li:first-child{background:#3A589E url(https://www.moe.go.kr/img/2021Renewal/common/sns_1_w.svg) no-repeat center center;}    
+.sns li:nth-child(2){background:#59B4E8  url(https://www.moe.go.kr/img/2021Renewal/common/sns_2_w.svg) no-repeat center center;}   
+.sns li:nth-child(3){background:#E44 url(https://www.moe.go.kr/img/2021Renewal/common/sns_3_w.svg) no-repeat center center;} 
+.sns li:nth-child(4){background:#F8C513 url(https://www.moe.go.kr/img/2021Renewal/common/sns_4_w.svg) no-repeat center center;} 
+.sns li:nth-child(5){background:#23AA36 url(https://www.moe.go.kr/img/2021Renewal/common/sns_5_w.svg) no-repeat center center;} 
+.sns li:nth-child(6){background: #3CC44F url(https://www.moe.go.kr/img/2021Renewal/common/sns_6_w.svg) no-repeat center center;} 
+.sns li:last-child{background:#8F23BD url(https://www.moe.go.kr/img/2021Renewal/common/sns_7_w.svg) no-repeat center center;;}
+
+
+/* 푸터 banner */
+footer .layout .banner{padding:0 2rem; height: 60px; line-height: 60px; position: relative; z-index: 30;}
+.banner  .banner_prev,
+.banner  .banner_next{content: ""; cursor: pointer; display: block; background:url(https://moe.go.kr/img/2021Renewal/common/back_arrow.svg) no-repeat center center; position: absolute; width: 1.5em; height: 100%; top: 0; z-index: 100;}
+.banner  .banner_prev{left: 0;}
+.banner  .banner_next{right: 0;  transform: scaleX(-1);}
+.banner .move{position: relative; width: 100%; height: 100%; overflow: hidden;}
+.banner .move::after{width: 9.5em; height: 100%; content: ""; display: block; position: absolute; top: 0; right: 0; background: linear-gradient(90deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.5) 75%,#fff 100%);}
+.banner .move ul{width: 12000px; position: absolute; top: 0; left: 0;}
+.banner .move ul li{display: inline-block; margin: 0px 5px; }
+.banner .move ul li a{border: 1px solid gainsboro; font-size: 0.95em; color: black; display: block; height: 40px; line-height: 40px; padding: 0px 30px; position: relative;}
+.banner .move ul li a::after{content: ""; display: block; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 0.8em; height: 0.8em; background: url(https://moe.go.kr/img/2021Renewal/common/blank.svg) no-repeat center center; background-size: cover;}
+.banner .move ul li a:hover{border: 1px solid black;} 
+ 
+

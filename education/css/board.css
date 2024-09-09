@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.con .body{margin: 30px 0px;}
+
+/* 본문 내용 */
+.search_box{margin-top: 30px; width: 100%; height: 40px; line-height: 40px;} 
+.search_box p{ font-size: 0.9rem; float: left; }
+.search_box p span{color:#2E63C5FF; font-weight: 500;}
+
+/* list 검색 */
+.search_box .search{float: right; height: 40px; line-height: 40px;}
+.search select{padding: 0px 20px 0px 10px; cursor: pointer; font-size: 0.8rem; height: 40px; float: left; border-bottom-left-radius: 5px; border-top-left-radius: 5px; border: 1px solid gainsboro; outline: none;}
+.search input[type="text"]{height: 38px; outline: none;  border: 1px solid gainsboro; float: left; padding: 0px 10px; }
+.search input[type="button"]{float: left; height: 40px; padding: 0px 15px; border-bottom-right-radius: 5px; border-top-right-radius: 5px; background: #053863FF; color: white; border:none; outline:none; cursor: pointer;}
+.search_box .search select:hover,
+.search_box .search input[type="text"]:focus{border: 1px solid;}
+
+/* 본문 공지사항 */
+.con .body .notice{width: 100%;}
+.con .body .notice p{border: 5px solid #D8E3F2; padding:22px 20px; font-size: 0.9em;}
+.con .body .video ul{display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 350px;  margin-top: 20px; padding: 20px 0px;  border-top: 1px solid gainsboro;}
+.con .body .video  ul li{ position: relative; padding: 20px;}
+.con .body .video  ul li strong{font-size: 1.1em;  color: #333;}
+.con .body .video  .info{margin-top: 10px;}
+.con .body .video  .info table tr td{border: none; padding: 0px; text-align: left; font-size: 1em; }
+.con .body .video  ul li img{width: 100%;}
+
+
+.con .body .video  ul li:nth-child(3n+1)::before{content: ""; width: 1090px; height: 1px; background: gainsboro; display: block; position:absolute; top: 350px; left: 0;}
+/*본문 테이블 */
+.con .body table{width: 100%; border-spacing: 0; margin-top: 20px; border-top: 2px solid black;}
+/* 테이블 thead */
+.con .body table thead th{ padding: 15px 0px; font-weight: 400; font-size: 0.9em;   background: #D8E3F2FF;  border-left: 1px solid gainsboro; border-bottom: 1px solid gainsboro;}
+.con .body table th:first-child{border-left: none;}
+/* 테이블 tbody */
+.con .body table tbody th{font-size: 0.9rem; font-weight: 400;  background: #D8E3F2FF;  border-bottom: 1px solid gainsboro;}
+.con .body table button{border-radius:  5px; cursor: pointer; background: white; border: 1px solid #2E63C5FF; color:#2E63C5FF; width: 80px; height: 25px; }
+.con .body table td{text-align: center;  font-size: 0.9em; padding: 15px 5px; border-left: 1px solid rgb(212, 212, 212); border-bottom: 1px solid gainsboro;}
+.con .body table td:first-child{border-left: none;}
+.con .body table td:nth-child(2){text-align: left; padding-left: 12px;}
+.con .body table td a{ color: black;}
+.con .body table td a:hover{color:#2E63C5FF}
+
+
+
+/* 테이블 tfoot */
+.con .body table tfoot tr td{text-align: left; padding: 20px; font-weight: 400;}
+
+/* 다음글 */
+.con .body .list{margin: 2em 0; padding: 1em 0px; width: 100%; font-size: 0.9rem; }
+.con .body .list ul li span{padding-left: 1em; position: relative; height: 100%; float: left;}
+.con .body .list ul li span::before{content: ""; display: block; width: 0.6em; height: 0.6em; background: url(https://www.moe.go.kr/img/2021Renewal/common/select_arrow.svg) no-repeat center center; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.con .body .list ul li #prev::before{transform: scale(-1);}
+.con .body .list ul li:nth-child(2){border-top: none;}
+.con .body .list ul li{padding: 10px 15px; list-style: none; border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;}
+.con .body .list ul li a{display: block; color:black; padding-left: 5em;}
+.con .body .list ul li a:hover{text-decoration: underline;}
+

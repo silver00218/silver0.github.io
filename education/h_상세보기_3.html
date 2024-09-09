@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>교육부 > 교육부 소식 > 공지사항</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="root">
+        <!-- 헤더 시작 -->
+        <div id="header">
+            <!-- 로고 -->
+            <div class="box"><p><span class="img_logo"></span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p></div>
+            <div data-item="1">
+                <div class="layout">
+                    <h1><a href="./main.html"><img src="./images/logo/logo.png" alt="로고"></a></h1>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">어린이</a></li>
+                            <li><a href="#">관련누리집<span><ion-icon name="chevron-down-outline"></ion-icon></span></a></li>
+                            <li><a href="#">시도교육청<span><ion-icon name="chevron-down-outline"></ion-icon></span></a></li>
+                            <li><a href="#">영문[ENG]</a></li>
+                        </ul>
+                    </div>
+                    <!-- 검색창 -->
+                    <div class="search">
+                        <a href="#" class="open" id="open"><span>검색창열기</span></a>
+                        <label for="search_text"></label>
+                        <input type="text" id="search_text" data-v="off" placeholder="검색어를 입력하세요"> 
+                        <input type="submit" value="검색">
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="https://www.facebook.com/ourmoekr" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                            <li><a href="#" title="새창 이동"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <!-- 메인메뉴 -->
+                <nav>
+                    <ul>
+                        <!-- 메뉴1 -->
+                        <li>
+                            <a href="#">국민참여·민원</a>
+                            <!-- sub menu - 1 -->
+                            <div class="sub">
+                                <div class="side_title">
+                                    <div class="title">
+                                        <h3>국민참여·민원</h3>
+                                        <p>교육부 누리집을<br /> 방문해 주셔서 고맙습니다</p>
+                                    </div>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li >
+                                            <!-- 하위메뉴1 -->
+                                            <a href="#" class="m_sub">참여·소동</a>
+                                            <ul data-sub="2" class="f_sub">
+                                                <!-- 하위메뉴2 -->
+                                                <li><a href="#">참여 정보 한눈에</a></li>
+                                                <li><a href="#">국민제안</a></li>
+                                                <li><a href="#">나의국민제안</a></li>
+                                                <li><a href="#">국민생각함</a></li>
+                                                <li><a href="#">전자공청회</a></li>
+                                                <li><a href="#">학교방역 및 학사운영 현장 소동 게시판</a></li>
+                                                <li><a href="#">2028학년도 대입제도 개편의견 수렴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">민원</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">민원신청하기</a></li>
+                                                <li><a href="#">나의민원확인</a></li>
+                                                <li><a href="#">국민콜110</a></li>
+                                                <li><a href="#">자주묻는질문(FAQ)</a></li>
+                                                <li><a href="#">질의회신사례집</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">규제개혁</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">규제란?</a></li>
+                                                <li><a href="#">규제개혁과제</a></li>
+                                                <li><a href="#">규제개선건의</a></li>
+                                                <li><a href="#">규제입증요청</a></li>
+                                                <li><a href="#">규제정보포털로 바로가기</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">적극행정</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">적극행정이란?</a></li>
+                                                <li><a href="#">적극행정 교육 및 우수사례</a></li>
+                                                <li><a href="#">적극행정 공무원 정책 국민추천</a></li>
+                                                <li><a href="#">적극행정 우수공무원</a></li>
+                                                <li><a href="#">적극행정 점검단(모니터링단) 활동</a></li>
+                                                <li><a href="#">소극행정 신고하기</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">신고고충처리</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">안전신문고</a></li>
+                                                <li><a href="#">불법사교육신고센터</a></li>
+                                                <li><a href="#">사혁 혁신제안 비리 신고센터</a></li>
+                                                <li><a href="#">교육분야 성희롱 성폭력 신고센터</a></li>
+                                                <li><a href="#">학생선수 폭력피해 신고센터</a></li>
+                                                <li><a href="#">유치원 비리 신고센터</a></li>
+                                                <li><a href="#">돌봄 고충지원센터</a></li>
+                                                <li><a href="#">갑질 신고센터</a></li>
+                                                <li><a href="#">공시정보 오류 및 허위정보 신고센터</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">부패공익신고</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">내부 부패 행위 등 신문고</a></li>
+                                                <li><a href="#">청렴정책자문관(청렴옴부즈맨)</a></li>
+                                                <li><a href="#">예산 낭비 신문고</a></li>
+                                                <li><a href="#">나의신고보기</a></li>
+                                                <li><a href="#">공익신고센터</a></li>
+                                                <li><a href="#">복지보조금 부정수급 및 공공재정 부정청구 등 신고센터</a></li>
+                                                <li><a href="#">청탁금지법 자료실</a></li>
+                                                <li><a href="#">청탁금지법 문의</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">교육부 청백리 칭찬반</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">교육부 청백리 칭찬반</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </li>
+                        <!-- 메뉴2 -->
+                        <li>
+                            <a href="#">교육부 소식</a>
+                            <!-- sub menu - 2-->
+                            <div class="sub">
+                                <div class="side_title">
+                                    <div class="title">
+                                        <h3>교육부 소식</h3>
+                                        <p>교육부 누리집을<br /> 방문해 주셔서 고맙습니다</p>
+                                    </div>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li>
+                                            <a href="./h_공지사항.html">공지사항</a>
+                                            <ul data-sub="2">
+                                                <li><a href="./h_공지사항.html">공지사항</a></li>
+                                                <li><a href="#">사업공고</a></li>
+                                                <li><a href="#">입찰알림</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">인사알림</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">인사정보</a></li>
+                                                <li><a href="#">채용공고</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">표창대상자 공개검증</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">보도·설명·반박</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">보도자료</a></li>
+                                                <li><a href="#">동정자료</a></li>
+                                                <li><a href="#">보도설명·반박</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">홍보자료</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">영상자료</a></li>
+                                                <li><a href="#">전자(e)브리핑</a></li>
+                                                <li><a href="#">홍보이미지</a></li>
+                                                <li><a href="#">홍보동영상</a></li>
+                                                <li><a href="#">행복한교육 누리잡지</a></li>
+                                                <li><a href="#">소식지</a></li>
+                                                <li><a href="#">해외교육정보동향자료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">창작자(크리에이터)협업</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">창작자(크리에이터)협업</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </li>
+                        <!-- 메뉴3 -->
+                        <li>
+                            <a href="#">정책</a>
+                            <!-- sub menu - 3-->
+                            <div class="sub">
+                                
+                                <div class="side_title">
+                                    <div class="title">
+                                        <h3>정책</h3>
+                                        <p>교육부 누리집을<br /> 방문해 주셔서 고맙습니다</p>
+                                    </div>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" >주요업무계획</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">새 정부 교육부 업무 보고</a></li>
+                                                <li><a href="#">2021년 이전 주요업무 계획</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">학교방역 및 학사운영 관련 정보</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">힉교방역 및 학사운영 관련정보</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">유아교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">초·중·고 교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">대학(원)교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">평생교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">국외(유학) 교육</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">창작자(크리에이터)협업</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">교육 통계 및 정보화</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">지방교육자치</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">사회정책</a>
+                                            <ul data-sub="2" >
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">디지털 인재양성</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </li>
+                        <!-- 메뉴4 -->
+                        <li>
+                            <a href="#">정보·법령</a>
+                            <!-- sub menu - 4-->
+                            <div class="sub">  
+                                <div class="side_title">
+                                    <div class="title">
+                                        <h3>정보·법령</h3>
+                                        <p>교육부 누리집을<br /> 방문해 주셔서 고맙습니다</p>
+                                    </div>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" >정보공개</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">정보공개 제도안내</a></li>
+                                                <li><a href="#">정보공표 운영 종합표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">사전정보공표</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">힉교방역 및 학사운영 관련정보</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">공공데이터 개방</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">정책실명(이력)제</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">법령정보</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">공공누리</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 메뉴5 -->
+                        <li>
+                            <a href="#">교육부 소개</a>
+                            <!-- sub menu - 5-->
+                            <div class="sub">
+                                <div class="side_title">
+                                    <div class="title">
+                                        <h3>교육부 소개</h3>
+                                        <p>교육부 누리집을<br /> 방문해 주셔서 고맙습니다</p>
+                                    </div>
+                                </div>
+                                <div class="menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" >일반현황</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">연혁</a></li>
+                                                <li><a href="#">소속기관</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">부총리</a>
+                                            <ul data-sub="2">
+                                                <li><a href="#">힉교방역 및 학사운영 관련정보</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                                <li><a href="#">교육분야 코로나19 참고자료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">차관</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="./h_조직도.html">조직도·직원 및 연락처</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="./h_조직도.html">표창대상자 공개검증</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">찾아오시는 길</a>
+                                            <ul data-sub="2">
+                                                <li> <a href="#">찾아오시는 길</a></li>
+                                                <li> <a href="#">층별안내</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </li>
+                    </ul>
+    
+                </nav>
+                <a href="#" class="hamburger"><span class="hamBtn">전체메뉴</span></a>
+            </div>
+                <!-- 1200px 햄버거 메뉴 슬라이드메뉴 -->
+            <div class="slideMenu" id="slideMenu" data-slide="off">
+                <div class="gnb">
+                    <div class="head">
+                        <!-- 어린이, 영문 바로가기 -->
+                        <ul>
+                            <li><a href="#">어린이</a></li>
+                            <li><a href="#">영문(ENG)</a></li>
+                        </ul>
+                        <a href="#"><span id="close">닫기</span></a>
+                    </div>
+                    <div class="body">
+                        <!-- 메인 -->
+                        <div class="title">                       
+                            <ul class="f">
+                                <li id="hamtit" data-ham="ham_1" class="hamtit active"><a href="#">국민참여민원</a></li>
+                                <li id="hamtit" data-ham="ham_2" class="hamtit"><a href="#">교육부 소식</a></li>
+                                <li id="hamtit" data-ham="ham_3" class="hamtit"><a href="#" >정책</a></li>
+                                <li id="hamtit" data-ham="ham_4"  class="hamtit"><a href="#" >정보·법령</a></li>
+                                <li id="hamtit" data-ham="ham_5" class="hamtit"><a href="#" >교육부소개</a></li>
+                                <ul>
+                                    <li id="hamtit" class="hamtit" data-ham="ham_6"><a href="#hamsub_1" >관련누리집</a></li>
+                                    <li data-ham="ham_7"><a href="#hamsub_2" >시도교육청</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <!-- 서브 -->
+                        <div class="side_menu">
+                            <!-- menu1 -->
+                            <ul id="ham_1" class="hamcon show">
+                                <li>
+                                    <a href="#" id="s_menu">참여·소통</a>
+                                    <ul class="sub">
+                                        <li><a href="h_참여정보한눈에.html">참여 정보 한눈에</a></li>
+                                        <li><a href="#">국민제안</a></li>
+                                        <li><a href="h_나의국민제안.html">나의국민제안</a></li>
+                                        <li><a href="#">국민생각함</a></li>
+                                        <li><a href="#">전자공청회</a></li>
+                                        <li><a href="#">학교방역 및 학사운영 현장 소통 게시판</a></li>
+                                        <li><a href="#">2028학년도 대입제도 개편 의견 수렴</a></li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a href="#"  id="s_menu">민원</a>
+                                    <ul class="sub">
+                                        <li><a href="#">민원신청하기</a></li>
+                                        <li><a href="#">나의민원확인</a></li>
+                                        <li><a href="#">국민콜110</a></li>
+                                        <li><a href="#">자주묻는질문(FAQ)</a></li>
+                                        <li><a href="#">질의회신사례집</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"  id="s_menu">규제개혁</a>
+                                    <ul class="sub">
+                                        <li><a href="#">규제란?</a></li>
+                                        <li><a href="#">규제개혁과제</a></li>
+                                        <li><a href="#">규제개선건의</a></li>
+                                        <li><a href="#">규제입증요청</a></li>
+                                        <li><a href="#">규제정보포털로 바로가기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"  id="s_menu">적극행정</a>
+                                    <ul class="sub">
+                                        <li><a href="#">적극행저이란</a></li>
+                                        <li><a href="#">적극행정 교육 및 우수사례</a></li>
+                                        <li><a href="#">적극행정 우수공무원</a></li>
+                                        <li><a href="#">적극행정 점검단(모니터링단) 활동</a></li>
+                                        <li><a href="#">소극행정신고하기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"  id="s_menu">신고·고충처리</a>
+                                    <ul class="sub">
+                                        <li><a href="#">안전신문고</a></li>
+                                        <li><a href="#">불법사교육신고센터</a></li>
+                                        <li><a href="#">사학 혁신제안·비리 신고센터</a></li>
+                                        <li><a href="#">교육분야 성희롱·성폭력 신고센터</a></li>
+                                        <li><a href="#">학생선수 폭력피해 신고센터</a></li>
+                                        <li><a href="#">돌봄 고충지원센터</a></li>
+                                        <li><a href="#">유치원 비리 신고센터</a></li>
+                                        <li><a href="#">갑질신고센터</a></li>
+                                        <li><a href="#">공시정보 오류 및 허위정보 신고 센터</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="s_menu">부패공익신고</a>
+                                    <ul class="sub">
+                                        <li><a href="#">내부 부패 행위 등 신문고</a></li>
+                                        <li><a href="#">청렴정책자문관(청렴옴부즈맨)</a></li>
+                                        <li><a href="#">예산 낭비 신문고</a></li>
+                                        <li><a href="#">나의신고보기</a></li>
+                                        <li><a href="#">공익신고센터</a></li>
+                                        <li><a href="#">복지·보조금 부정수급 및 공공재정 부정청구 등 신고센터</a></li>
+                                        <li><a href="#">청탁금지법 자료실</a></li>
+                                        <li><a href="#">청탁금지법 문의</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">교육부 청백리 칭찬방</a></li>
+                            </ul>
+                            <!-- menu2 -->
+                            <ul id="ham_2" class="hamcon">
+                                <li>
+                                    <a href="#" id="s_menu">공지사항</a>
+                                    <ul class="sub">
+                                        <li><a href="h_공지사항.html">공지사항</a></li>
+                                        <li><a href="#">사업공고</a></li>
+                                        <li><a href="#">입찰알림</a></li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a href="#" id="s_menu">인사알림</a>
+                                    <ul class="sub">
+                                        <li><a href="#">인사정보</a></li>
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">표창대상자 공개검증</a></li>
+                                <li>
+                                    <a href="#" id="s_menu">보도·설명·반박</a>
+                                    <ul class="sub">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">동정자료</a></li>
+                                        <li><a href="#">보도설명·반박</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="s_menu">홍보자료</a>
+                                    <ul class="sub">
+                                        <li><a href="h_영상뉴스.html">영상뉴스</a></li>
+                                        <li><a href="#">전자</a></li>
+                                        <li><a href="#">홍보이미지</a></li>
+                                        <li><a href="#">홍보동영상</a></li>
+                                        <li><a href="#">행복한교육 누리잡지</a></li>
+                                        <li><a href="#">소식지</a></li>
+                                        <li><a href="#">해외교육정보동향자료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="h_창작자[크리에이]협업.html">창작자(크리에이터)협업</a></li>
+                            </ul>
+                            <!-- menu3 -->
+                            <ul id="ham_3" class="hamcon">
+                                <li>
+                                    <a href="#" id="s_menu">주요업무계획</a>
+                                    <ul class="sub">
+                                        <li><a href="#">2022년 이전 주요업무계획</a></li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a href="#" id="s_menu">학교방역 및 학사운영 관련 정보</a>
+                                    <ul class="sub">
+                                        <li><a href="#">학교방역 및 학사운영 관련 정보</a></li>
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="s_menu">유아교육</a></li>
+                                <li> <a href="#" id="s_menu">초중고 교육</a></li>
+                                <li><a href="#" id="s_menu">대학(원)교육</a></li>
+                                <li><a href="#" id="s_menu">평생교육</a></li>
+                            </ul>
+                            <!-- menu4 -->
+                            <ul id="ham_4" class="hamcon">
+                                <li>
+                                    <a href="#" id="s_menu">정보공개</a>
+                                    <ul class="sub">
+                                        <li><a href="#">정보공개 제도안내</a></li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a href="#" id="s_menu">학교방역 및 학사운영 관련 정보</a>
+                                    <ul class="sub">
+                                        <li><a href="#">학교방역 및 학사운영 관련 정보</a></li>
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="s_menu">유아교육</a></li>
+                                <li> <a href="#" id="s_menu">초중고 교육</a></li>
+                                <li><a href="#" id="s_menu">대학(원)교육</a></li>
+                                <li><a href="#" id="s_menu">평생교육</a></li>
+                            </ul>
+                            <!-- menu5 -->
+                            <ul id="ham_5" class="hamcon">
+                                <li>
+                                    <a href="#" id="s_menu">일반현황</a>
+                                    <ul class="sub">
+                                        <li><a href="h_공지사항.html">공지사항</a></li>
+                                        <li><a href="#">사업공고</a></li>
+                                        <li><a href="#">입찰알림</a></li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a href="#">인사알림</a>
+                                    <ul class="sub">
+                                        <li><a href="#">인사정보</a></li>
+                                        <li><a href="#">채용공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">표창대상자 공개검증</a></li>
+                                <li>
+                                    <a href="#">보도·설명·반박</a>
+                                    <ul class="sub">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">동정자료</a></li>
+                                        <li><a href="#">보도설명·반박</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">홍보자료</a>
+                                    <ul class="sub">
+                                        <li><a href="h_영상뉴스.html">영상뉴스</a></li>
+                                        <li><a href="#">전자</a></li>
+                                        <li><a href="#">홍보이미지</a></li>
+                                        <li><a href="#">홍보동영상</a></li>
+                                        <li><a href="#">행복한교육 누리잡지</a></li>
+                                        <li><a href="#">소식지</a></li>
+                                        <li><a href="#">해외교육정보동향자료</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- menu6 -->
+                            <ul id="ham_6" class="hamcon">
+                                <li>
+                                    <a href="#" id="s_menu">교육일반</a>
+                                    <ul class="sub">
+                                        <li><a href="#">교육정보디지털도서관</a></li>
+                                        <li><a href="#">교육통계서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="s_menu">유ㆍ초ㆍ중ㆍ고</a>
+                                    <ul class="sub">
+                                        <li><a href="#">고입정보</a></li>
+                                        <li><a href="#">교육통계서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="s_menu">대학</a>
+                                    <ul class="sub">
+                                        <li><a href="#">대학 알리미</a></li>
+                                        <li><a href="#">교육통계서비스</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- menu7 -->
+                            <ul id="ham_7" class="hamcon">
+                                <li><a href="#" target="_blank"><span>서울특별시교육청</span></a></li>
+                                <li><a href="#" target="_blank"><span>부산광역시교육청</span></a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <!-- sns -->
+                    <div class="footer">
+                        <div class="sns">
+                            <ul>
+                                <li><a href="https://www.facebook.com/ourmoekr" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                                <li><a href="#" title="새창 이동"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- container start -->
+        <div class="container">
+            <div class="contents">
+                <div class="content">
+                <!-- 사이드 메뉴 -->
+                <div class="side" >
+                    <div class="title"><p>교육부 소식</p></div>
+                    <div class="side_menu"  data-menu="2">
+                        <ul>
+                            <li>
+                                <a href="#" id="s_menu">공지사항</a>
+                                <ul class="sub">
+                                    <li><a href="h_공지사항.html">공지사항</a></li>
+                                    <li><a href="#">사업공고</a></li>
+                                    <li><a href="#">입찰알림</a></li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="#" id="s_menu">인사알림</a>
+                                <ul class="sub">
+                                    <li><a href="#">인사정보</a></li>
+                                    <li><a href="#">채용공고</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">표창대상자 공개검증</a></li>
+                            <li>
+                                <a href="#" id="s_menu">보도·설명·반박</a>
+                                <ul class="sub">
+                                    <li><a href="#">보도자료</a></li>
+                                    <li><a href="#">동정자료</a></li>
+                                    <li><a href="#">보도설명·반박</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" id="s_menu">홍보자료</a>
+                                <ul class="sub">
+                                    <li><a href="h_영상뉴스.html">영상뉴스</a></li>
+                                    <li><a href="#">전자</a></li>
+                                    <li><a href="#">홍보이미지</a></li>
+                                    <li><a href="#">홍보동영상</a></li>
+                                    <li><a href="#">행복한교육 누리잡지</a></li>
+                                    <li><a href="#">소식지</a></li>
+                                    <li><a href="#">해외교육정보동향자료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="h_창작자[크리에이]협업.html">창작자(크리에이터)협업</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 사이드 메뉴 끝 -->
+                <!-- 본문 -->
+                <div class="con">
+                    <div class="head">
+                        <div class="local">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#">&gt; 교육부 소식</a></li>
+                                <li><a href="#">&gt; 공지사항</a></li>
+                                <li><a href="#">&gt; 공지사항</a></li>
+                            </ul>
+                        </div>
+                        <div class="title">
+                            <p>공지사항</p>
+                            <ul class="icon">
+                                <li><span></span></li>
+                                <li><span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <!-- 테이블 내용 -->
+                        <table data-type="2">
+                            <thead>
+                                <tr>
+                                    <th>제목</th>
+                                    <td colspan="5">2022년도 규제개혁, 법제,송무,국회업무 유공자 표창 계획 안내</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>등록일</th>
+                                    <td>2022-11-07</td>
+                                    <th>등록자</th>
+                                    <td>허태식</td>
+                                    <th>조회수</th>
+                                    <td>1007</td>
+                                </tr>
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td colspan="5">
+                                        2022년도 규제개혁, 법제,송무,국회업무 유공자 표창 계획.pdf
+                                        <span>
+                                            <button>다운로드<span><ion-icon name="arrow-down-outline"></ion-icon></span></button>
+                                            <button>미리보기<span><ion-icon name="eye-outline"></ion-icon></span></button>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">
+                                        2022년도 규제개혁, 법제, 송무, 국회업무 유공자 표창 계획을 안내드립니다.
+                                        <p>
+                                            우리 부에서는 규제개혁, 법제, 송무, 국회업무의 성실한 수행으로 교육발전에 기여한 유공자를 포상하여, 사기진작과 정책추진 동력을 마련하고자 합니다.
+                                            <br />
+                                            교육부 장관표창 유공자를 추천하고자 하는 기관에서는 붙임의 계획을 참고하시어 기한내 제출서류를 작성하시어 제출해주시기 바랍니다.
+                                        </p>
+                                        
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="btn" >
+                            <a data-btn="1" href="h_공지사항.html"><span><ion-icon name="list-outline"></ion-icon></span>목록</a>
+                        </div>
+                        
+    
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <span id="prev">이전글</span>
+                                    <a href="h_상세보기_2.html">제4회 교육 공공데이터 분석활용대회 수장작 발표 안내</a>
+                                </li>
+                                <li>
+                                    <span>다음글</span>
+                                    <a href="#">2022년 대한민국 우수교육시설 작품 공모 안내</a>                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="query">
+                            <p><span></span> 열람하신 정보에 대해 만족하십니까?</p>
+                        </div>
+
+                        <div class="check">
+                            <ul>
+                                <li><input type="radio" name="research" id="radio_1" checked><label for="radio_1">매우만족</label></li>
+                                <li><input type="radio" name="research" id="radio_2"><label for="radio_2">만족</label></li>
+                                <li><input type="radio" name="research" id="radio_3"><label for="radio_3">보통</label></li>
+                                <li><input type="radio" name="research" id="radio_4"><label for="radio_4">불만족</label></li>
+                                <li><input type="radio" name="research" id="radio_5"><label for="radio_5">매우불만족</label></li>
+                            </ul>
+
+                        
+                            <label for="search_text"></label>
+                            <input type="text" id="search_text" placeholder="기타 의견을 입력하세요">
+    
+                            <button onclick="check();">평가하기</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- 본문 끝 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- container end -->
+        <!-- footer -->
+        <footer>
+            <div class="layout">
+                <div class="banner">
+                    <span class="banner_prev"></span>
+                    <div class="move">
+                        <ul class="banner_slides">
+                            <li><a href="#"><span>1 국립한글박물관</span></a></li>
+                            <li><a href="#">재외한국교육기관 정보 서비스[OKEIS]</a></li>
+                            <li><a href="#">공익신고자 보호제도</a></li>
+                            <li><a href="#">복지·보조금부정신고</a></li>
+                            <li><a href="#">대한민국 대통령실</a></li>
+                            <li><a href="#">국무총리비서실</a></li>
+                            <li><a href="#">7 교육통계서비스</a></li>
+                        </ul>
+                    </div>
+                    <span class="banner_next"></span>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a href="#"><span>개인정보처리방침</span></a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">웹접근성정책</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">행정서비스헌장</a></li>
+                        <li><a href="#">전자우편 무단수집거부</a></li>
+                        <li><a href="#">읽기전용프로그램</a></li>
+                    </ul>
+                </div>
+                <div class="local">
+                    <ul>
+                        <li>[30119] 세종특별시 갈매로 408, 14동 정부세종청사 교육부 / 세종특별차지 어진동 634</li>
+                        <li><span>일반 번호</span> 정부민원안내 전화 상담실 국번없이 110 / 교육부 민원 전화 상담실 02-6222-6060 / 당직실 044-203-6118</li>
+                        <li><span>팩스 번호</span> 민원 044-203-6093 / 문서접수 044-203-6133 / 사업자등록번호 102-83-00181</li>
+                    </ul>
+                    <ul class="img">
+                        <li><a href="#"><img src="./images/footer_bn_1.png" alt="다시 도약하는 대한만국 함께 잘 사는 국민의 나라"></a></li>
+                        <li><a href="#"><img src="./images/footer_bn_2.png" alt="국가상징 알아보기"></a></li>
+                        <li><a href="#"><img src="./images/footer_bn_3.png" alt="과학기술정보통신부 web접근성"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+<script>
+    // sideMenu click 
+    $('div.side_menu > ul > li').click(function(){
+            if($(this).hasClass('active')){
+                $(this).find('.sub').stop().slideUp(200);
+                $(this).removeClass('active');
+            }
+            else{
+                $(this).find('.sub').stop().slideDown(200);
+                $(this).addClass('active');
+            }
+        });
+    // main 메뉴
+    $(document).ready(function(){
+        $(".sub").hide();
+        $("nav > ul > li").hover(function(){
+            $(this).children().slideDown(500);
+        });
+        $("nav > ul > li").mouseleave(function(){
+            $(".sub").stop().css("display","none");
+
+        });
+    });
+    
+
+    // max-width : 1200 햄버거메뉴 > main메뉴 클릭시
+    $(document).ready(function(){
+        
+        $('ul.f li').click(function(){
+            var ham_id = $(this).attr('data-ham');
+
+            $('ul.f > li').removeClass('active');
+            $('.hamcon').removeClass('show');
+
+            $(this).addClass('active');
+            $("#"+ham_id).addClass('show');
+        })
+
+    });
+
+
+</script>
+    
+    

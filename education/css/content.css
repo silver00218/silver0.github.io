@@ -1,0 +1,79 @@
+.con .body .tit[data-tit="1"]{width: 100%; background: #f4f5f9; border-top: 1px solid #c4c9ce; position: relative; padding: 10px 0px; }
+.con .body .tit[data-tit="1"]::after{content: ""; display: block; cursor: pointer; width: 2em; height: 2em; background: url(https://www.epeople.go.kr/resource/images/paid/nep/pot/content/btn_slideArrow.png) no-repeat center center; transform: scaleY(-1); position:absolute; top: 15%; right: 10px; }
+.con .body .tit[data-tit="1"] h3{padding-left: 20px;}
+
+
+/* 내용 */
+.content .con{width: 100%;  box-sizing: border-box;  float: left; background: #ffffff; padding: 20px 45px; border-bottom-right-radius: 20px; border-top-right-radius: 20px; margin: 0 auto;}
+.content .con .body *{font-family: 'Noto Sans KR',sans-serif; }
+.content .con .head{width: 100%; height: auto;  border-bottom: 1px solid gainsboro;}
+
+.con .head .local{width: 100%; height: 35px;  line-height: 35px;}
+.con .head .local ul{float:right;}
+.con .head .local ul li{display: inline-block; }
+.con .head .local ul li:first-child{background: url(https://www.moe.go.kr/img/2021Renewal/common/home.svg) no-repeat; padding-left: 10px; position: relative; top:9px; left: 2px;}
+.con .head .local ul li a{ color:#525252; font-size: 0.9rem; padding: 3px;}
+
+.con .head .title{margin: 12px 0px; display: block; width: 100%; height:45px; line-height: 45px; }
+.con .head .title p{width: 80%; font-size: 1.9em; font-weight:600; float: left; }
+/* 공유 및 프린트 */
+.con .head .title .icon{float: right; }
+.con .head .title .icon li{ padding: 20px;  border-radius: 20px; display: inline-block; cursor: pointer;}
+.con .head .title .icon li:first-child{background:  #E8F0FE url(https://www.moe.go.kr/img/2021Renewal/common/sns_open.svg) no-repeat center; margin-right: 5px;}
+.con .head .title .icon li:last-child{background:  #E8F0FE url(https://www.moe.go.kr/img/2021Renewal/common/print.svg) no-repeat center; }
+
+/* 페이징 */
+.pageing{ width: 100%; padding: 10px 0px; height: auto; margin-top: 20px; position: relative;}
+.pageing .page{position: absolute; left: 50%; transform: translateX(-50%); }
+.pageing .page .before{float: left; height: auto;}
+.page .after{float: left;}
+.pageing .page ul{float: left; margin: 0px 10px;} 
+.pageing .page ul li{display: inline-block;}
+.pageing .page a{display: inline-block;; font-size: 0.9em; color: #2b2b2b; width: 2em; height: 2em; border: 1px solid gainsboro;  cursor: pointer; border-radius: 5px;  text-align: center; line-height: 2em;}
+
+.pageing .page a:hover{border: 1px solid black; transition: all 0.5s;}
+.page ul li:first-child a{background: #053862FF; color: white; border: 1px solid #053862FF; cursor: none;}
+/* 이전버튼 */
+.pageing .page  .skip_prev{content: ""; display: block; width: 2em; height: 2em;  background: url(https://www.moe.go.kr/img/2021Renewal/common/page_first.svg) no-repeat center center; background-size:cover;}
+.pageing .page  .prev{content: ""; display: block; width: 2em; height: 2em; background: url(https://www.moe.go.kr/img/2021Renewal/common/page_prev.svg) no-repeat center center;background-size:cover;}
+/* 다음버튼 */
+.pageing .page .next{content: ""; display: block; width: 2em; height: 2em; background: url(https://www.moe.go.kr/img/2021Renewal/common/page_next.svg) no-repeat center center; background-size:cover;}
+.pageing .page .skip_next{content: ""; display: block; width: 2em; height: 2em; background: url(https://www.moe.go.kr/img/2021Renewal/common/page_end.svg) no-repeat center center;  background-size:cover}
+
+
+/* 목록버튼 및 다운로드 및 미리보기*/
+.con  a[data-btn="2"]{position: relative;  border: 1px solid #2E62C5FF; border-radius: 5px; display: inline-block; padding: 0 1em; }
+.con  a[data-btn="2"] span{width: 100%; color: #2E62C5FF; font-size: 0.8em; padding-right: 0.5em; }
+.con  a[data-btn="2"]:hover span{color: white;}
+.con  a[data-btn="2"] span::after{ content: ""; display: block; position: absolute; right: 0.5em; top: 50%; transform: translateY(-50%); width: 1em; height: 1em;} 
+.con  a[data-btn="2"] .download::after{background:url(https://www.moe.go.kr/img/2021Renewal/common/icon_6.svg) no-repeat center 1px; background-size:cover;}
+.con  a[data-btn="2"] .view::after{background:url(https://www.moe.go.kr/img/2021Renewal/common/icon_7.svg) no-repeat center 1px; background-size:cover;}
+
+.con  a[data-btn="2"]:hover .download::after{background:url(https://www.moe.go.kr/img/2021Renewal/common/icon_6_w.svg) no-repeat center 1px; background-size:cover;}
+.con  a[data-btn="2"]:hover .view::after{background:url(https://www.moe.go.kr/img/2021Renewal/common/icon_7_w.svg) no-repeat center 1px; background-size:cover;}
+.search_box a[data-btn="2"]{float: right; background: white; height: 25px; line-height: 25px; top: 50%; transform: translateY(-50%);}
+.con  a[data-btn="2"]:hover{background: #2E62C5FF;}
+.con .body .btn{margin-top: 2em; position: relative; }
+.con .body .btn a{display: block;  width: 70px; height: 35px; line-height: 35px; text-align: center; position: relative; left: 50%; transform: translateX(-50%);}
+
+
+
+
+/* 만족도조사 */
+.con .footer{overflow: hidden; margin: 120px 0px 45px 0px; padding: 20px; border: 1px solid gainsboro; border-radius: 10px; }
+.con .footer span{position: relative; top: -5px; }
+.con .footer p span{padding-left: 40px; padding-bottom: 10px; background-image: url(https://www.moe.go.kr/img/2021Renewal/common/repo_simbol.svg); background-repeat: no-repeat;}
+/* radio버튼 */
+.con .footer ul{float: left; }
+.con .footer ul li{margin-top: 10px;   display: inline-block;  padding-right:8px;}
+.con .footer ul li:active{border: 2px solid rgb(255, 183, 0)}
+.con .footer input[type="radio"]{display: none;}
+.con .footer ul li label{ position: relative; cursor: pointer; padding-top: 10px; padding-right: 3px;     font-weight: 400;}
+.con .footer ul li label:nth-last-child(1){padding-right: 0;}
+.con .footer ul li label::before{content:"";border: 2px solid gainsboro;display: inline-block; width: 16px; height: 16px; margin: -5px 8px; margin-left: 0; border-radius: 50%;}
+.con .footer ul li label::after{content: "";display: inline-block;position: absolute;width: 12px; height: 12px;background: rgba(66, 66, 66, 0);left: 0px; top: 23px;  margin: -6px 4px;border-radius: 50%;}
+.con .footer input[type="radio"]:checked + label::after{background: black;}
+/* 평가입력칸 및 평가하기 버튼 */
+.con .footer input[type="text"]{padding-left: 5px; width: 45%; outline:none; border: 1px solid gainsboro; margin-left: 15px; border-radius: 5px; background: #f3f3f3; height: 36px;}
+.con .footer input[type="text"]:focus{border:1px solid black; background: white;}
+.con .footer button{background: #2E62C5FF; color:white; width: 80px; cursor: pointer;  height: 40px; border: none; outline:none; border-radius: 5px;}
