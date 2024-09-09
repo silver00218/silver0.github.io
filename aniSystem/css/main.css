@@ -1,0 +1,295 @@
+.contents{padding-top: 80px;}
+
+.slides{ width: 100%; position: relative;}
+.slides  img{ width: 100%;}
+.swiper-container-horizontal>.swiper-pagination-progressbar.s_btn{top: auto; bottom: 0;}
+.slide_g{position: absolute; top: 50%; width: 100%; left: 50%; transform: translate(-50%, -50%); z-index: 20;}
+.mb_slide, .mb4_slide{display: none;}
+/* 메인 슬라이드 버튼 */
+.slide_a{position: relative;}
+.slide_a div{width: auto; height: 64px; background-color: #ffffff91; line-height: 64px;}
+.swiper-button-prev.s_prev{left: 10px; background-image: none; } 
+.swiper-button-next.s_next{right: 10px; background-image: none; }
+.slide_a span{font-size: 3.8em; color: #0000009a; line-height: normal;}
+
+.slide_a span:hover{color: #0385DD;}
+.slide_con{text-indent: -9999px; position: absolute; top: 0;}
+/* contents */
+/* 영역1 : 등록동물정보 관련 버튼 영역 */
+.con1{margin-top: 3em; margin-bottom: 3em; }
+.con1 .box{max-width: 750px; margin: 0 auto;}
+.con1 ul{display: flex;}
+.con1 ul li{width: 35%;}
+.con1 ul li a{display: block; color: #333; text-align: center;   border: 1px solid #ccc; box-sizing: border-box; padding: 15px 0; background: #fff; transition: all 0.3s;}
+.con1 ul li:first-child a{border-radius: 5px 0 0 5px; border-right: none;}
+.con1 ul li:last-child a{border-radius: 0 5px 5px 0; border-left: none;}
+/* li 오버시 */ 
+.con1 ul li:hover a{background: #0E9DFF; color: #fff;}
+.con1 p{color: #666; margin-top: 5px;}
+
+/* 영역2 : 6가지 버튼과 동물 등록 하는이유, 동물사랑배움터 버튼 있는 영역 */
+.con2{width: 100%; background: #D6E4EB; box-sizing: border-box; padding: 8em 0;}
+/* list */
+.con2 .list_con{max-width: 1300px; margin: 0 auto;}
+.con2 .list_con ul{display: flex; justify-content: space-around;}
+.con2 ul li{width:15%; }
+.con2 ul li a{display: block; position: relative; transition: all 0.3s; color:#333; background: #fff; height: 180px; border-radius: 10px; box-sizing: border-box; padding: 15px; font-size: 1.4em;}
+.con2 ul .tit strong{font-weight: 600;}
+.con2 ul .li p{color: #555; font-size: 0.9em;}
+.list_con span[class*=icon_0], .list_con .arrow{position: absolute; right: 10px; bottom: 0; width: 80px;}
+.list_con span[class*=icon_0] img, .list_con .arrow img{width: 100%; }
+.list_con .arrow{display: none;  bottom: 20px; right: 15px;}
+.con2 ul li:hover a{background: #0E9DFF; color: #fff;}
+.con2 ul li:hover span[class*=icon_0]{display: none;}
+.con2 ul li:hover .arrow{display: block;}
+
+/* img_con */
+.con2 .img_con{display: flex; justify-content: space-around; margin-top: 4em;}
+.img_con div[class*=img_c0]{width: 35%; position: relative; } 
+.img_con div[class*=img_c0] a{display: block; color: #fff; font-size: 1.5em;}
+.img_con div[class*=img_c0] figure img{width: 100%; border-radius: 5px 50px 5px 50px; transition: all 0.3s ease-in; filter: brightness(0.8);}
+.img_con div[class*=img_c0] .info{position: absolute; top: 2em; box-sizing: border-box; padding: 0 1em;}
+.img_con div[class*=img_c0] .info .tit strong{font-weight: 500;}
+.img_con div[class*=img_c0] .info .tit p{font-size: 0.9em; font-weight: 400; margin-top: 1em;}
+.img_con div[class*=img_c0] span{position: absolute; bottom: 2em; right: 2em; }
+
+.img_con div[class*=img_c0]:hover figure img{filter: brightness(0.3);}
+
+/* 영역3 :  등록동물 검색_해외동물등록조회_등록등록업체검색_동물보호센터 검색 버튼 영역*/
+.con3{display: flex; justify-content: space-around; align-items: center; margin: 10em auto;}
+.con3 ul{display: grid; grid-template-columns: repeat(2,1fr); width: 35%; gap: 10px; }
+.con3 ul li{height: 216px; line-height: 216px; transition: all 0.3s; overflow: hidden;}
+.con3 ul li a{display: block; color: #333; text-align: center; font-size: 1.2em; font-weight: 500; }
+.con3 ul li:nth-child(1), .con3 ul li:nth-child(4){background: #0385DD; border-radius: 10px 80px 10px 80px;}
+.con3 ul li:nth-child(1) a, .con3 ul li:nth-child(4) a{color: #fff;}
+.con3 ul li:nth-child(2), .con3 ul li:nth-child(3){background: #D6E4EB; border-radius: 80px 10px 80px 10px;}
+.con3 ul li:hover{box-shadow: 0 0 8px #0E9DFF;}
+.con3 ul li:hover a{text-decoration: underline;}
+/* 영역3의 이미지 */
+.con3 .img_box{width: 40%; position: relative;}
+.con3 .img_box img{width: 80%; z-index: 100;}
+.con3 .img_box .box{width: 80%; height: 100%; background: #86cfff; z-index: -1; position: absolute; top:15%; left: 15%;} 
+
+/* 영역4 : 유기동물 공고 영역 */ 
+.con4{width: 100%; background: #D6E4EB; box-sizing: border-box; padding: 3em 0; position: relative;}
+.con4 .con4_slide{width: calc(100% - 126px); margin: 0 auto; overflow: hidden; padding: 0 2em;} 
+.con4 .tit{display: flex; justify-content: space-between;}
+.con4 .tit h2{font-size: 2em;}
+.con4 .tit span{font-size: 2.5em; transform: rotate(0); transition: all 0.3s;}
+.con4 .tit a{display: block;}
+.con4 .tit a:hover span{transform:rotate(180deg);}
+.con4 .con_slide{ margin: 3em auto;  text-align: center; z-index: 1;}
+.con4 .con_slide li a{display: block; box-sizing: border-box; transition: all 0.3s; padding: 2em 1.5em 3em; border-radius: 10px; color: #444; background: #fff;}
+.con4 .con_slide li:hover a{box-shadow: 0 0 8px rgb(0, 0, 0, 0.5);}
+.con4 .con_slide li img{width: 100%;}
+.con4_b{text-align: center;}
+.con4_btn{position: absolute; width: 100%;  top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 20;}
+.con4_bn{display: flex; justify-content: space-between;}
+.con4_b .swiper-pagination-bullet{width: 15px; height: 15px; margin-right: 10px;}
+.con4_b .swiper-pagination-bullet-active{width: 30px; height: 30px; background: url('../img/main/icon_b_f.png') no-repeat center center/cover; vertical-align: bottom;}
+.con_slide .info{margin-top: 30px;}
+.con_slide .info h3{margin: 0.5em 0; font-size: 1.4em; text-align: left;}
+.swiper-button-prev.con4_p,.swiper-button-next.con4_n{width: auto; height: auto;}
+.swiper-button-prev.con4_p{left: 10px; z-index: 20; background-image: none;}
+.swiper-button-next.con4_n{right: 0; background-image: none;}
+.con4_bn span{font-size: 4.5em; color: #888;}
+.con4_bn span:hover{color: #0385DD;}
+.if_c{margin-top: 2em;}
+.if_c ul li{display: flex; justify-content: space-between;text-align: left; margin-bottom: 1em; font-size: 1.1em;}
+.if_c ul li span.tit{width: 80px;}
+.if_c ul li span.con{width: calc(100% - 80px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* 영역5 : 공지사항 영역*/
+.con5{display: flex; justify-content: space-between; margin-top: 8em; position: relative; box-sizing: border-box; padding: 0 2em;} 
+/* 이미지 */
+.con5 .n_img{position: relative;}
+.con5 .n_img li{position: absolute; margin-left: 5%;}
+.n_img .e1{left: 8em; animation: e1 1.4s; }
+.n_img .e2{top: 50%; left: 3em; animation: e2 0.4s; }
+.n_img .e3{left: 2.5em; top: -20px; animation: e3 1.6s; }
+
+/* 내용 */
+.con5 .notice{width: 45%;}
+.con5 .notice .title{margin-bottom: 2em; font-size: 1.8em; display: flex; justify-content: space-between; align-items: center;}
+.con5 .notice .n_plusBtn{display: block; }
+.con5 .notice .n_plusBtn span{font-size: 1.5em; transform: rotate(0); transition: all 0.3s;}
+.con5 .notice .n_plusBtn:hover span{transform:rotate(180deg);}
+.con5 .notice li{margin-bottom: 4em;}
+.con5 .notice li a{display: block; color: #888; transition: all 0.3s; background: #fff; font-size: 1.2em; padding: 1.5em 0; box-shadow: 0 0 2px #696969; text-indent: 1.5em; border-radius: 10px;}
+.con5 .notice li .ps{width: 32px; height: 32px; display: inline-block; vertical-align: bottom; background: url('../img/main/icon_b.png') no-repeat center center;}
+.con5 .notice li .n_con{ width: calc(100% - 70px); display: inline-block; padding-left: 8px; text-indent: 0; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis;}
+.con5 .notice li:hover a{box-shadow: 0 0 8px #FBC436;  color: #444}
+.con5 .notice li img{width: 100%;}
+
+@keyframes e1 {
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+@keyframes e2{
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+@keyframes e3 {
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+
+
+/* 영역 6  정보공개 동물복지놀장 문의전화 영역*/
+.con6{display: flex; justify-content: space-between;  margin: 10em auto ; position: relative;  box-sizing: border-box; padding: 0 2em;}
+.con6_01{width: 45%;}
+.con6_01 .n_img{margin-right: 5%; width: 50%;position: relative;}
+.con6_01 .con6_list{display: flex; justify-content: space-between;}
+.con6_01 .con6_list li{border-radius: 20px; width: 48%;}
+.con6_01 .con6_list li:first-child{background: #0E9DFF;}
+.con6_01 .con6_list li:last-child{background: #0385DD;}
+.con6_01 .con6_list li a{display: block;   height: 150px; position: relative; box-sizing: border-box; padding: 1em; font-size: 1.4em;  color: #fff;    }
+.con6_01 .con6_list li:hover a{text-decoration: underline;}
+
+/* 정보공개 동물복지놀장 인증절차 아이콘 */
+.con6_list span{position: absolute; bottom: 1em; right: 1em; text-indent: -9999px;  display: block; width: 3.5em; height: 3.5em;}
+.con6_list span.collect{background: url('../img/main/icon_collection.png') no-repeat center center/contain; }
+.con6_list span.farm{background: url('../img/main/icon_farm.png') no-repeat center center/contain; }
+
+.list_num{background: #E4F1F7; margin-top: 1em; border-radius: 20px; box-sizing: border-box; padding: 2em;} 
+.list_num .ph_num{display: flex; justify-content: space-around; position: relative;}
+
+.list_num ul li{font-size: 1.7em; font-weight: 500; margin-bottom: 0.5em;}
+.list_num ul li:nth-child(2){color: #0385DD;  font-size: 2.5em;}
+.list_num ul li:last-child{font-size: 1.2em; color: #444;}
+.system_num{margin-top: 12px; color: #777; font-size: 1.1em;}
+.con6 .n_img li{position: absolute;}
+.con6 .n_img li img{width:100%}
+.n_img .e2_1{right: 5em; animation: e2_1 2s; top: -20px;}
+.n_img .e2_2{right: 3em; bottom: -7em; width: 200px; animation: e2_2 2s;}
+.n_img .e2_3{right: 30em; bottom: 1em; animation: e2_3 2s;}
+.n_img .e2_4{right: 30px; animation: e2_4 2s; top: -30px;}
+
+@keyframes e2_1 {
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+@keyframes e2_2{
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+@keyframes e2_3 {
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+@keyframes e2_4 {
+    0%{opacity: 0; transform: translateY(-30px);}
+    to{opacity: 1; transform: translatey(0);}
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* 영역1 */
+    .con1{box-sizing: border-box; padding: 0 2em;}
+    .con1 ul{flex-wrap: wrap;}
+    .con1 ul li{width: 50%; }
+
+    .con1 ul li:last-child{width: 100%;}
+    .con1 ul li:first-child a{border-radius:  5px 0 0 0;}
+    .con1 ul li:nth-child(2) a{border-radius: 0 5px 0 0;  }
+    .con1 ul li:last-child a{ border-left: 1px solid #ccc; border-radius:  0 0 5px 5px;}
+    .con1 ul li:not(:last-child) a{border-bottom: none;}
+    /* 영역2 */
+    .con2 ul{flex-wrap: wrap;}
+    .list_con span[class*=icon_0]{width: 80px; bottom: 10px;}
+    .con2 ul li{font-size: 1.1em; width: 30%; margin-top: 20px;}
+    .img_con div[class*=img_c0]{width: 40%;}
+    .img_con div[class*=img_c0] a{font-size: 1.1em; }
+    .con2 .img_con .tit p{display: none;}
+
+    /* 영역3 */
+    .con3 ul{width: 70%;}
+    .con3 ul li{height: 180px; line-height: 180px;}
+    .con3 .img_box{display: none;}
+
+
+    /* 영역 4 */
+    .con4 .tit h2{font-size: 1.8em;}
+    .con4 .if_c{display: none;}
+    .con4 .con_slide li a{padding: 10px;}
+    .con4 .con_slide li img{width: 100%;}
+    .swiper-button-prev.con4_p,.swiper-button-next.con4_n{display: none;}
+
+    /* 영역5 */
+    .n_img{display: none;}
+    .con5 .notice{width: 95%; margin: 0 auto;}
+    .con6{margin-top: 3em;}
+    .con6_01{ width: 95%; margin: 0 auto;}
+}
+@media screen and (max-width:768px){
+    /* 슬라이드 영역 */
+    .pc_slide{display: none;}
+    .mb_slide{display: block;}
+    .slide_a div{line-height: 50px; height: 50px;}
+    .slide_a span{font-size: 3em;}
+
+    .img_con div[class*=img_c0]{width: 45%;}
+
+    /* 영역2 */
+    .con2{padding: 4em 0;}
+    .con2 ul li{width: 46%;}
+    .con2 ul li a{height: 160px;}
+    .list_con span[class*=icon_0]{width: 60px;}
+    .list_con .arrow{width: 70px;}
+    .con2 ul .tit{font-size: 0.8em;}
+
+
+
+}
+
+@media screen and (max-width:500px){
+    /* 영역2 */
+    .con2 .img_con{justify-content: center;}
+    .img_con div[class*=img_c0]{width: 48%;}
+    .img_con div[class*=img_c0] figure img{border-radius: 0;}
+    .img_con div[class*=img_c0] .info{top: 10px; }
+    .img_con div[class*=img_c0] .info .tit strong{font-weight: 400;}
+    .img_con div[class*=img_c0] span{bottom: 10px; right: 10px; width: 50px;}
+    .img_con div[class*=img_c0] span img{width: 100%;}
+    /* 영역3 */
+    .con3{margin: 5em 0;}
+    .con3 ul{width: 90%;}
+    .con3 ul li:nth-child(n){border-radius: 0;}
+    
+
+    /* 영역5 */
+    .con5{margin-top: 3em;}
+    .con5 .notice .title h2{font-size: 1.2em;}
+    .con5 .notice li, .con5 .notice .title{margin-bottom: 1em;}
+    .con5 .notice li:not(:first-child){display: none;}
+    .con5 .notice li a{text-indent: 10px; color: #555;}
+    .con5 .notice li .ps{vertical-align: top; }
+    .con5 .notice li .n_con{white-space: normal;}
+
+    /* 영역6 */
+    .con6{margin-bottom: 3em;}
+    .list_num{padding: 0.95em;}
+    .con6_01 .con6_list span{background-image: none;}
+    .list_num .ph_num{justify-content:flex-start;}
+    .list_num .ph_num img{display: none; }
+    .list_num ul li{font-size: 1.4em; margin-bottom: 0;}
+    .list_num ul li:nth-child(2){margin-bottom: 0.5em; font-weight: 600;}
+    .system_num{margin-top: 5px;}
+    .con6_01 .con6_list li a{font-size: 1.3em; height: 130px;}
+}
+
+@media screen and (max-width:425px){
+    /* 슬라이드 */
+    .mb_slide{display: none;}
+    .mb4_slide{display: block;}
+    /* 영역1 */
+    .con1 ul li:not(:last-child) a{height: 71px;}
+
+    /* 영역4 */
+    .con4{padding: 2em;}
+    .con4 .con4_slide{width: 100%; padding: 0;}
+}
+
+
+

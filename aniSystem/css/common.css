@@ -1,0 +1,102 @@
+.layout{max-width: 1440px; margin: 0 auto;}
+header {position: fixed;  z-index: 300; width: 100%; left: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background: #fff;}
+header .layout{display: flex;  justify-content: space-between; z-index: 100;}
+header .logo{ z-index: 100; width: 200px; }
+header .logo a{height: 70px; line-height: 70px; display: block;}
+header .logo img{width: 100%; vertical-align: middle;}
+.menu_g{width: 80%; display: flex; justify-content: space-between; align-items: center;}
+.h_menu{display: none; }
+
+/* 메인메뉴 */
+.m_menu{width: 95%; z-index: 1000;}
+.menu_bg{width: 100%; height: 400px; background:#d9edfa;  display: none; position: absolute; top: 80px; box-shadow: 0 1px 2px #333;}
+.menu_bg .icon_bg {max-width: 1440px;height: 100%;margin: 0 auto;}
+.menu_bg .icon_bg ul{width: 80%; margin-left: 20%; position: relative;height: 400px;}
+.menu_bg .icon_bg li{position: absolute; bottom: 10px; background: url('../img/main/icon_insurance.png') no-repeat center center/contain; width: 100%; background-position-x: 170px; height: 20em; opacity: 0.2; display: none; text-indent: -9999px;}
+.menu_bg .icon_bg li:nth-child(2){background-image: url('../img/main/icon_certificate.png'); background-position-x: calc(15% + 200px);}
+.menu_bg .icon_bg li:nth-child(3){background-image: url('../img/main/icon_livestock.png'); background-position-x: calc(37% + 200px);}
+.menu_bg .icon_bg li:nth-child(4){background-image: url('../img/main/icon_cat.png');background-position-x: calc(70% - 400px);}
+.menu_bg .icon_bg li:nth-child(5){ background-image: url('../img/main/icon_info.png');     background-position-x: calc(70% - 256px);}
+.menu_bg .icon_bg li:nth-child(6){background-image: url('../img/main/icon_hospital.png');      background-position-x: calc(89% - 290px);}
+.menu_bg .icon_bg li:nth-child(7){ background-image: url('../img/main/icon_document.png');      background-position-x: calc(100% - 240px);}
+.m_menu>ul{display: flex;  justify-content: flex-end; }
+.m_menu > ul > li{flex-grow: 1; position: relative;}
+.m_menu > ul > li > a{display: block; color: #333; text-align: center; font-size: 1.2em; height: 80px;  line-height: 80px; font-weight: 500; font-size: 1.5em;}
+
+/* 서브메뉴 */
+.s_menu{position: absolute; background: #bbdceb; height: 400px; width: 180px;  left: 50%; transform: translateX(-50%);  display: none;}
+.s_menu li{width: 100%;}
+.s_menu li a{display: block; margin: 10px 0; font-size: 1.2em; padding-left: 12px;}
+
+.lm_box{display: flex; justify-content: space-between; z-index: 100;}
+.lm_box li a{width: 25px; height: 25px; display: block;}
+.lm_box li img{width: 100%;}
+
+/* 메뉴 오버시 */
+.m_menu > ul > li:hover a{color: #0E9DFF;}
+/* .m_menu > ul > li:hover .s_menu{display: block;} */
+.m_menu > ul > li:hover .s_menu li a{color: #333;}
+.s_menu li:hover a{text-decoration: underline;}
+
+.h_menu, #m_ver{left: -100%;}
+
+footer{width: 100%; background: #f2f2f2; box-sizing: border-box; padding: 2em 0; margin-top: 5em;}
+footer #footer{display: flex; justify-content: space-between; align-items: center;}
+footer .if{width: 60%; color: #666;}
+footer .if ul{display: flex;}
+footer ul li{position: relative; padding-right: 10px;}
+footer ul li:last-child{font-weight: 600;}
+footer ul li:last-child::after{display: none;}
+footer ul li::after{display: block; content: ''; height:10px; border-right: 1px solid #444; position: absolute; top: 5px; right: 5px;}
+footer .footer_wev{width: 100px;}
+footer img{width: 100%;}
+
+
+/* 모바일버전 */
+/* 메뉴 배경 */
+#mb_navi_bg{ position: fixed; top: 0; left:-100%; width: 100%; height: 100%; background: rgba(51, 51, 51, 0.651); z-index: 1000;}
+#mb_navi .mb_navi_h{height: 70px;  background: #0E9DFF; display:flex; align-items: center;  justify-content: space-between;}
+#mb_navi .mb_navi_h h2{text-indent: 12px; color: #fff; font-size: 1.8em; font-weight: 500;}
+/* 닫기 버튼 */
+.mb_close{ cursor: pointer; display: none; position: absolute; right: 20px; }
+.mb_close span{font-size: 45px; font-weight: 400; color: #fff; height: 70px; line-height: 70px;}
+
+/*  모바일 버전 메뉴 */
+#mv_ver{display: none; z-index: 2000;}
+#mb_navi{position: fixed; width: 70%; height: 100%; background: #fff; top: 0;left: -100%; z-index: 2000;}
+.mb_navi_wrap > ul > li{ border-bottom: 1px solid #ccc; position: relative;}
+.mb_navi_wrap > ul > li > a{display: block; color: #333; font-size: 1.3em; font-weight: 500; height: 60px; line-height: 60px; text-indent: 12px;}
+.mb_navi_wrap > ul > li> a::before{display: block; content: ''; width: 0; height: 0; border-top: 15px solid #ccc; border-left: 10px solid transparent; border-right: 10px solid transparent; position: absolute; right: 20px; top: 25px;}
+.mb_navi_wrap > ul > li  a.selected::before{border-top: 0; border-bottom: 15px solid #0E9DFF;}
+/* 서브메뉴 */
+#mb_navi .s_menu{display: none;  width: 100%; height: auto; background: rgba(202, 216, 255, 0.357); position:relative;}
+#mb_navi .s_menu > ul > li > a{display: block; text-align: left; margin:0; text-indent: 12px; height: 50px; line-height: 50px; text-decoration: none;}
+
+
+@media screen and (max-width:1024px){
+    header .layout{display: block; position: relative;}
+    header .logo{position: absolute; left: 50%; transform: translateX(-50%); z-index: 1000;}
+
+    /* menu */
+    .menu_g{width: auto;}
+    .m_menu{display: none;}
+    .lm_box{width: 100%; height: 80px; align-items: center; margin: 0 10px;}
+    .h_menu{display: block; margin-top: 7px;}
+    /* 햄버거 메뉴 */
+    #mb_ver, .mb_close{display: block;}
+    .mb_login_box, .mb_login_box ul{display: flex;}
+    #mb_btn{display: block; background: url('../img/main/h_menu.png') no-repeat; width: 39px; height: 39px; margin-right: 10px; cursor: pointer;}
+    
+    
+}
+@media screen and (max-width:768px){
+    #mb_navi .mb_navi_h h2{font-size: 1.3em;}
+    .mb_navi_wrap > ul > li > a{font-size: 1.2em;}
+    #mb_navi .s_menu > ul > li > a{font-size: 1.1em;}
+    /* footer */
+    footer #footer{flex-direction: column;}
+    footer .if{width: 95%; margin: 18px 0;}
+    footer .if ul{flex-wrap: wrap; margin-bottom: 18px; justify-content: center;}
+    footer p{text-align: center;}
+
+}
