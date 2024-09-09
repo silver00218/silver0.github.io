@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* 공통 */
+.contents{margin-top: 180px;}
+.tit{display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1em;}
+.tit h2{font-size: 2.3em;}
+span.art_name{color: #ccc;}
+
+
+/* today */
+#today{margin: 0.4em 0 0;}
+.to_video{border: 1px solid #333;}
+.to_video iframe{border: 0; width: 100%; height: 800px;}
+.to_video iframe .ytp-cued-thumbnail-overlay-image{-webkit-background-size:contain;}
+.to_video video.video-stream.html5-main-video{width: 100% !important; left: 0 !important; }
+
+/* chart */
+#chart{margin: 8em 0; }
+#chart .layout{position: relative;}
+#chart .tit h2{display: flex; flex-direction: column;}
+#chart .tit h2 span{font-size: 0.7em; font-weight: 400;}
+#chart .tit h2 .big{font-size: 1.1em; font-weight: 600;}
+/* 차트 탭 메뉴 */
+.chart_tab ul{display: flex;}
+.chart_tab ul li a{display: block; background: #3a3a3a; color: #ccc; padding: 8px 15px; border-radius: 20px; margin-right: 10px; transition: all 0.3s;}
+.chart_tab ul li.chart_v a{color: #fff; background: #fd0c35;}
+.chart_list > div{height: auto; position: relative;}
+/* 순위 */
+.chart_list{margin-top:3em; position: relative; height: auto; overflow: hidden; z-index: 0; }
+.chart_list > div:not(:first-child){display: none;}
+.chart_list ul{display: flex; flex-wrap: wrap;}
+.chart_list li{margin-bottom: 1.5em; width: 50%; overflow: hidden; border-radius: 3px; transition: all 0.3s; box-sizing: border-box; padding: 10px;} 
+.chart_list ul:nth-child(2) li .num{color: #fff;}
+.chart_list li:nth-child(4){order: 2;}
+.chart_list li:nth-child(2){order: 3;}
+.chart_list li:nth-child(5){order:4;}
+.chart_list li:nth-child(3){order: 5;}
+.chart_list li:nth-child(6){order: 6;}
+.chart_list ul:nth-child(2){color: #fff;}
+
+/* 노래 이미지 제목 이름 순위 */
+.chart_list li a{display: flex;  justify-content: space-between; align-items: center;}
+.chart_list li figure{width: 100px; border: 1px solid #555;}
+.chart_list li figure img{width: 100%;}
+.chart_list li .con{display: flex; align-items: start; font-size: 1.4em; width: calc(100% - 120px);}
+.chart_list li .con h3{ font-weight: 500;}
+.chart_list li .con .num{color: #fd0c35;}
+.chart_list li:nth-child(n+6) .con .num{color: #ffff;}
+.chart_list ul li .con > .album_con{width: calc(100% - 10px); margin-left: 10px;}
+.chart_list ul li .con > .album_con > h3{width: calc(100% - 10px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.chart_list ul li .con > .album_con > span{font-size: 0.9em; width: calc(100% - 10px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+/* 차트 버튼 */
+.chart_btn{position: absolute; top: 60%; display: flex; justify-content: space-between; width: 100%;}
+.chart_btn div:not(:first-child){display: none;}
+.chart_btn span{ padding: 10px; border-radius: 50%; background: #777; font-size: 2em;}
+.chart_btn span:hover{background: #fd0c35;}
+.chart_btn .prev{transform: rotate(180deg);}
+.chart_btn span.swiper-button-next, .chart_btn span.swiper-button-prev{background-image: none; width: auto; height: auto;}
+.chart_btn span.prev{left: -80px;}
+.chart_btn span.next{right: 0;}
+
+
+/* new_album */
+.tab_btn{position: relative;}
+.tab_btn ul{display: flex; justify-content: center;}
+.tab_btn ul li{margin-right: 10px;}
+.tab_btn ul li a{display: block; font-size: 1.3em; color: #444; background: #b9b9b9; padding:0.5em 1.2em; border-radius: 30px; transition: all 0.3s;}
+.tab_btn ul li.on a{background: #fd0c35; color: #fff;}
+
+/* 최신앨범 list */
+.new_list{box-sizing: border-box; max-width: 1300px; margin: 2em auto 0;}
+.new_list ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.new_list ul li{width: 20%; margin: 0 10px 4em;}
+.new_list ul li a{display: block; }
+.new_list ul li figure{border: 1px solid #333; }
+.new_list ul li figure img{width: 100%; transition: all 0.3s;}
+.new_list strong{display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc(100% - 10px); font-size: 1.5em; margin-top: 0.5em; font-weight: 500;}
+.new_list ul> li > a > span{display: block;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc(100% - 10px); font-size: 1.3em; }
+/* 오버시 */
+.img_v{position: relative;}
+.img_v>span{position: absolute; bottom: 10px; right: 10px; font-size: 4em; opacity: 0; visibility: hidden; transition: all 0.3s;}
+.new_list ul li:hover figure img{filter: brightness(50%);}
+.new_list ul li:hover .img_v>span{opacity: 1; visibility: visible;}
+
+
+
+/* dj station */
+#dj_station{margin: 5em 0 8em;}
+#dj_station > .tit{display: flex; justify-content: space-between;}
+#dj_station .layout > div{margin-bottom: 3em;}
+#dj_station h3{color: #fd0c35; font-size: 1.5em; font-weight: 500; }
+#dj_station ul{display: flex; justify-content: space-between;}
+
+#dj_station ul li{width: 18%; }
+#dj_station ul img{width: 100%; transition: all 0.3s;}
+#dj_station li  a{display: block; position: relative;}
+#dj_station li > a> span{position: absolute; bottom: 10px; right: 10px; opacity: 0; visibility: hidden; font-size: 4em;  transition: all 0.3s;z-index: 50;}
+#dj_station li a:hover span{opacity: 1; visibility: visible;}
+#dj_station li:hover img{filter: brightness(50%);}
+.feel_station.swiper-container, .genre_station.swiper-container{z-index: 0;}
+/* vibe_mag */
+#vibe_mag{margin-bottom: 10em;}
+.mag_con{display: flex; border: 1px solid #333;}
+.mag_con figure{width: 50%;}
+.mag_con img{width: 100%;}
+.mag_con > .con{background: #333; box-sizing: border-box; padding: 3em; flex-grow: 1;}
+.mag_con .special{height: 40px; line-height:40px; display: inline-block; padding: 0px 20px; border-radius: 20px; background: linear-gradient(to right, #fd0c35 0%, #7e00fb 100%);}
+.mag_con h2{font-size: 3em; margin-top: 0.3em;}
+.mag_con h3{font-size: 3em;}
+.mag_con h3 span{font-size: 0.5em; font-weight: 400; margin-right: 1em;}
+.mag_con > .con > .album .album_con{width: 60%;}
+.mag_con > .con > .album a{display: flex; align-items: center; margin-top: 3em;}
+.mag_con > .con > .album figure{width: 15%;}
+.mag_con > .con > .album figure img{width: 100%;}
+.mag_con > .con > .album .album_con *{display: block; margin-left: 1em;}
+.mag_con > .con > .album .album_con strong{font-size: 1.4em; font-weight: 500;}
+.mag_con > .con > .album .album_con span{text-indent: 5px; color: #ccc;}
+
+/* month_song */
+#month_song{margin-bottom: 8em;}
+#month_song > .layout > .tit > h2> span{font-size: 0.6em; color: #ccc; font-weight: 500; padding-left: 10px;}
+#month_song .month{display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto;}
+#month_song .month > figure{width: 20%;}
+#month_song img{width: 100%;}
+#month_song .swiper_m{width: 65%; overflow: hidden; z-index: 0;}
+#month_song .swiper_m.swiper-container{margin: 0;}
+#month_song .month_list > ul{display:flex; justify-content: space-between; flex-wrap: wrap;}
+.month_list > ul li{margin-bottom: 2em; width: 50%;}
+.month_list > ul li a{display: flex; align-items: center;}
+.month_list > ul li a > figure{width: 100px; overflow: hidden;}
+.month_list > ul li a > figure img{transform: scale(1); transition: all 0.3s;}
+.month_list > ul li a > .con{margin-left: 1.5em; width: 100%; overflow: hidden;}
+.month_list > ul li a > .con h3{font-size: 1.5em; margin-bottom: 0.3em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: calc(100% - 10px);}
+.month_list > ul li a > .con span{font-weight: 500; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;  display: block;}
+/* 오버시 */
+.month_list > ul li:hover figure img{transform: scale(1.2);}
+
+
+/* notice */
+.notice{margin-top: 3em; border-top: 1px solid #333;  position: relative;}
+.notice .layout{display: flex; align-items: center;}
+.notice strong{font-size: 1.5em;  font-weight: 500;}
+.notice ul{position: relative; width: 80%; height: 70px; line-height: 70px; overflow: hidden; margin-left: 3em;}
+.notice ul li{width: 100%; position: absolute; top: 0; left: 0; }
+.notice li a{display: block; font-size: 15px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.notice li:hover a{text-decoration: underline;}
+.notice li:not(:first-child){top: -100%;}
+.notice span{color: #ccc; cursor: pointer; font-size: 2.5em;}
+.notice span:hover{color: #fd0c35;}
+.notice .plus{margin-left: 5px; line-height: 0;}
+
+
+/* 음악 재생 */
+.music_box{position: fixed; bottom: 0; width: 100%; background: #131313; height: 80px;}
+.music_box .layout{display: flex; justify-content: space-between; align-items: center;}
+.music_box .album{margin-top: 3px;}
+.music_box .album a{display: flex; align-items: center;}
+.music_box .album figure{width: 100px; margin-right: 20px;}
+.music_box img{width: 100%;}
+.music_box .album .album_con{display: flex; flex-direction: column; width: 100%;}
+
+.music_box .layout .play span, .music_b span{line-height: 80px; font-size: 2em;}
+.music_b span{margin-right: 10px; cursor: pointer;}
+.music_b span.like{color: #fd0c35;}
+
+.music_box .album_con strong{font-weight: 500; font-size: 1.2em;}
+.music_box .album_con span{color: #ccc;}
+
+.play_stop span{cursor: pointer; margin: 0 3px; font-size: 30px;}
+
+/* 재생바 */
+.music_a{height: 3px; background: #ddd;}
+.music_h{height: 100%; background: #fd0c35;}
+@media screen and (min-width:850px) {
+    /* chart */
+    
+    .chart_list li:hover{background: #f8f8f8;}
+    .chart_list li:hover a{color: #333;}
+    .chart_list li:hover a span{color: #555;}
+    .chart_list li:nth-child(n+6):hover .num, .chart_list ul:nth-child(2) li:hover .num{color: #333;}
+
+}
+@media screen and (max-width:1440px) {
+    .contents > div > .layout{box-sizing: border-box; padding: 0 10px;}
+}
+@media screen and (max-width:850px)  {
+    /* 공통 */
+    .tit h2{font-size: 1.7em;}
+
+    #vibe_mag, #month_song{margin-bottom: 4em;}
+    /* today */
+    .to_video iframe{height: 450px;}
+
+    /* chart */
+    #chart{margin: 4em 0;}
+    #chart figure{width: 60px;}
+    .chart_list li{padding: 0; margin-bottom: 1em; border-radius: 0;}
+    .chart_list li .con{width: calc(100% - 75px); font-size: 1.1em;}
+    .chart_btn{display: none;}
+    /* new album */
+    .tab_btn ul li a{ font-size:1em;}
+    .new_list strong{font-size: 1.1em;}
+    .new_list ul> li > a > span{font-size: 1em;}
+    .img_v>span, #dj_station li > a> span{font-size: 2em;}
+
+    /* dj station */
+    #dj_station{margin: 4em 0;}
+
+    /* vibe mag */
+    #vibe_mag .tit{box-sizing: border-box; padding: 0 10px;}
+    .mag_con{flex-direction: column; }
+    .mag_con figure{width: 100%;}
+    .mag_con h2{font-size: 2.7em; margin-top: 10px;}
+    .mag_con h3{font-size: 2.7em;}
+    .mag_con > .con > .album .album_con{width: 80%;}
+    /* 이번달 노래 */
+
+    #month_song .month{margin-top: 2em;}
+    #month_song .swiper_m{width:100%}
+    #month_song .month > figure{display: none;}
+    .month_list > ul li{margin-bottom: 1.3em;}
+    .month_list > ul li a > figure{width: 80px;}
+    .month_list > ul li a > .con h3{font-size: 1.1em; font-weight: 500;}
+    .month_list > ul li a > .con span{font-size: 0.97em;}
+
+    /* 공지사항 */
+    .notice ul{margin-left: 1em;}
+    .notice strong{width: calc(100% - 80%);}
+
+    .music_box{margin-bottom: 49px; height: 65px;  }
+    .music_box .layout{box-sizing: border-box; padding: 0 10px;}
+    .music_box .album figure, .music_b span.like{display: none;}
+    .music_box .layout .play span, .music_b span{line-height: 60px;}
+    .music_box .album_con strong{font-size: 1em;}
+    .music_box .album_con span{font-size: 0.9em;}
+}
+@media screen and (max-width:520px){
+    .contents{margin-top: 80px;}
+}
+@media screen and (max-width:500px) {
+
+
+    /* today */
+    .to_video iframe{height: 300px;}
+    .to_video iframe .ytp-cued-thumbnail-overlay-image{-webkit-background-size:contain;}
+
+
+    /* 차트 */
+    .chart_list ul{flex-direction: column;}
+    .chart_list li{width: 100%;}
+    .chart_tab ul li a{padding: 8px 10px;}
+    .chart_list li:nth-child(2){order: 2;}
+    .chart_list li:nth-child(3){order: 3;}
+    .chart_list li:nth-child(4){order: 4;}
+    .chart_list li:nth-child(5){order:5;}
+    
+    .chart_list li .con .num{margin-top: -3px;}
+    .chart_list ul li .con > .album_con > h3{font-size: 1em;}
+
+    /* 최근 앨범 */
+    .new_list ul li{width: 40%;}
+    .new_list ul li:nth-child(n+5){display: none;}
+
+    /* dj */
+    #dj_station{margin: 0em 0 4em;}
+    #dj_station .layout > div{margin-bottom: 2em;}
+    #dj_station h3{font-size: 1.3em;}
+    #dj_station ul{overflow: hidden; justify-content: flex-start; width: 1000px;}
+    #dj_station ul li{ margin-right: 10px;}
+
+
+    /* mag */
+    .mag_con > .con{padding: 20px 10px;}
+    .mag_con .special{height: 30px; line-height: 30px;}
+    .mag_con h2{font-size: 2em;}
+    .mag_con h3{font-size: 2em;}
+    .mag_con > .con > .album a{margin-top: 2em; padding-top: 20px; border-top: 1px solid #777;}
+    /* 이달의 노래 */
+    .month_list > ul li{width: 100%;}
+    .month_list > ul li a > .con{width: 100%;}
+    .month_list > ul li:nth-child(n+6){display: none;}
+
+    /* 공지사항 */
+    .notice strong{font-size: 1.2em; width: calc(100% - 70%);}
+}

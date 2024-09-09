@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/swiperJS/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/navi.js"></script>
+    <script src="./js/swiperSlide.js"></script>
+
+    <!-- 아이폰에서 아이콘 홈화면 아이콘 보여줌 -->
+    <link rel="apple-touch-icon-precomposed" href="./img/fav.png">
+    <!-- 브라우저에서 -->
+    <link rel="shortcut icon" href="./img/fav.png">
+</head>
+<body>
+    <header>
+        <div class="h_top layout">
+            <h1 id="logo"><a href="#"><img src="./img/logo.png" alt="바이브"></a></h1>
+            <div class="small_m">
+                <ul>
+                    <li><a href="#">서비스소개</a></li>
+                    <li><a href="#">내돈내듣</a></li>
+                    <li><a href="#">onStage</a></li>
+                    <li><a href="#">VIBE 오디오</a></li>
+                </ul>
+                <div class="mb_ship"><a href="#"><span class="mb_ship_icon"></span>멤버십 구독</a></div>
+            </div>
+
+            <div class="mob">
+                <span class="material-symbols-rounded mob_menu">menu</span>
+                <div class="mb_bg"></div>
+                <nav class="mob_m"></nav>
+            </div>
+        </div>
+        <div class="h_bottom">
+            <div class="layout">
+                <nav class="m_menu">
+                    <ul>
+                        <li class="active"><a href="#today">투데이</a></li>
+                        <li><a href="#chart">차트</a></li>
+                        <li><a href="#new_album">최신앨범</a></li>
+                        <li><a href="#dj_station">DJ 스테이션</a></li>
+                        <li><a href="#vibe_mag">VIBE MAG</a></li>
+                        <li><a href="#month_song">이달의 노래</a></li>
+                    </ul>
+                </nav>
+                <div class="login_box">
+                    <a href="#"><span class="material-symbols-rounded login">sentiment_satisfied</span>로그인</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="contents">
+        <!-- today -->
+        <div id="today">
+            <div class="layout">
+                <div class="tit">
+                    <h2>TODAY</h2>
+                    <span class="p_btn"><a href="#">더보기</a></span>
+                </div>
+            </div>
+            <div class="to_video">
+                <iframe  src="https://www.youtube.com/embed/f3NKVA3y4hc" title="YouTube video player" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- chart -->
+        <div id="chart">
+            <div class="layout">
+                <div class="tit">
+                    <h2><span>차트</span><span class="big">TOP&nbsp;100</span></h2>
+                    <span class="p_btn"><a href="#">전체보기</a></span>
+                </div>
+                <div class="chart_tab">
+                    <ul>
+                        <li class="chart_v"><a href="#">TOP&nbsp;100</a></li>
+                        <li><a href="#">국내&nbsp;급상승</a></li>
+                        <li><a href="#">해외&nbsp;급상승</a></li>
+                    </ul>
+                </div>
+                <div class="chart_list">
+                    <!-- top 100 -->
+                    <div class="top_chart swiper-container">
+                        <div class="top_list swiper-wrapper">
+                            <!-- 1~6 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 super shy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">1</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Super Shy</h3>
+                                                <span class="art_name">New Jeans</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 ETA"></figure>
+                                        <div class="con">
+                                            <h3 class="num">2</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">ETA</h3>
+                                                <span class="art_name">New Jeans</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/ive.jpg" alt="IVE(아이브) I AM"></figure>
+                                        <div class="con">
+                                            <h3 class="num">3</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">I AM</h3>
+                                                <span class="art_name">IVE(아이브)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/seven.jpg" alt="정국 Seven (feat. Latto) - Clean Ver "></figure>
+                                        <div class="con">
+                                            <h3 class="num">4</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Seven (feat. Latto) - Clean Ver </h3>
+                                                <span class="art_name">정국</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 퀸카(Queencard)"></figure>
+                                        <div class="con">
+                                            <h3 class="num">5</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">퀸카(Queencard)</h3>
+                                                <span class="art_name">(여자)아이들</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">6</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 7 ~ 12 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 Allergy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">7</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Allergy</h3>
+                                                <span class="art_name">(여자)아이들</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/spicy_aespa.jpg" alt="aespa spicy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">8</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">spicy</h3>
+                                                <span class="art_name">aespa</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 시차"></figure>
+                                        <div class="con">
+                                            <h3 class="num">9</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">시차</h3>
+                                                <span class="art_name">인피니트</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/page_day6.jpg" alt="DAY6 한페이지가 될 수 있게 "></figure>
+                                        <div class="con">
+                                            <h3 class="num">10</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">한페이지가 될 수 있게</h3>
+                                                <span class="art_name">DAY6</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/gr_cm10.jpg" alt="10cm 그라데이션"></figure>
+                                        <div class="con">
+                                            <h3 class="num">11</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">그라데이션</h3>
+                                                <span class="art_name">10cm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 new emotions"></figure>
+                                        <div class="con">
+                                            <h3 class="num">12</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">인피니트</h3>
+                                                <span class="art_name">New Emotions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- 국내 급상승 -->
+                    <div class="dom_chart swiper-container">
+                        <div class="dom_list swiper-wrapper">
+                            <!-- 1~6 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 new emotions"></figure>
+                                        <div class="con">
+                                            <h3 class="num">1</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">New Emotions</h3>
+                                                <span class="art_name">인피니트</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/seven.jpg" alt="정국 Seven (feat. Latto) - Clean Ver "></figure>
+                                        <div class="con">
+                                            <h3 class="num">2</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Seven (feat. Latto) - Clean Ver </h3>
+                                                <span class="art_name">정국</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/ive.jpg" alt="IVE(아이브) I AM"></figure>
+                                        <div class="con">
+                                            <h3 class="num">3</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">I AM</h3>
+                                                <span class="art_name">IVE(아이브)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 시차 "></figure>
+                                        <div class="con">
+                                            <h3 class="num">4</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">시차</h3>
+                                                <span class="art_name">인피니트</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 퀸카(Queencard)"></figure>
+                                        <div class="con">
+                                            <h3 class="num">5</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">퀸카(Queencard)</h3>
+                                                <span class="art_name">(여자)아이들</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">6</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 7 ~ 12 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">7</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">8</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">9</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">10</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">11</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">12</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- 해외 급상승 -->
+                    <div class="over_chart swiper-container">
+                        <div class="over_list swiper-wrapper">
+                            <!-- 1~6 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 super shy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">1</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Super Shy</h3>
+                                                <span class="art_name">New Jeans</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 ETA"></figure>
+                                        <div class="con">
+                                            <h3 class="num">2</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">ETA</h3>
+                                                <span class="art_name">New Jeans</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/ive.jpg" alt="IVE(아이브) I AM"></figure>
+                                        <div class="con">
+                                            <h3 class="num">3</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">I AM</h3>
+                                                <span class="art_name">IVE(아이브)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/seven.jpg" alt="정국 Seven (feat. Latto) - Clean Ver "></figure>
+                                        <div class="con">
+                                            <h3 class="num">4</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Seven (feat. Latto) - Clean Ver </h3>
+                                                <span class="art_name">정국</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 퀸카(Queencard)"></figure>
+                                        <div class="con">
+                                            <h3 class="num">5</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">퀸카(Queencard)</h3>
+                                                <span class="art_name">(여자)아이들</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="num">6</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                                <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 7 ~ 12 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 Allergy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">7</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">Allergy</h3>
+                                                <span class="art_name">(여자)아이들</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/spicy_aespa.jpg" alt="aespa spicy"></figure>
+                                        <div class="con">
+                                            <h3 class="num">8</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">spicy</h3>
+                                                <span class="art_name">aespa</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 시차"></figure>
+                                        <div class="con">
+                                            <h3 class="num">9</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">시차</h3>
+                                                <span class="art_name">인피니트</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/page_day6.jpg" alt="DAY6 한페이지가 될 수 있게 "></figure>
+                                        <div class="con">
+                                            <h3 class="num">10</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">한페이지가 될 수 있게</h3>
+                                                <span class="art_name">DAY6</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/gr_cm10.jpg" alt="10cm 그라데이션"></figure>
+                                        <div class="con">
+                                            <h3 class="num">11</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">그라데이션</h3>
+                                                <span class="art_name">10cm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/infinite.jpg" alt="인피니트 new emotions"></figure>
+                                        <div class="con">
+                                            <h3 class="num">12</h3>
+                                            <div class="album_con">
+                                                <h3 class="a_tit">인피니트</h3>
+                                                <span class="art_name">New Emotions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="chart_btn">
+                    <div class="top_btn">
+                        <span class="material-symbols-rounded top_prev prev swiper-button-prev">keyboard_double_arrow_right</span>
+                        <span class="material-symbols-rounded top_next next swiper-button-next">keyboard_double_arrow_right</span>    
+                    </div>
+                    <div class="dom_btn">
+                        <span class="material-symbols-rounded dom_prev prev swiper-button-prev">keyboard_double_arrow_right</span>
+                        <span class="material-symbols-rounded dom_next next swiper-button-next">keyboard_double_arrow_right</span>   
+                    </div>
+                    <div class="over_btn">
+                        <span class="material-symbols-rounded over_prev prev swiper-button-prev">keyboard_double_arrow_right</span>
+                        <span class="material-symbols-rounded over_next next swiper-button-next">keyboard_double_arrow_right</span>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- new album -->
+        <div id="new_album">
+            <div class="layout">
+                <div class="tit">
+                    <h2>최신앨범</h2>
+                    <span class="p_btn"><a href="#">전체보기</a></span>
+                </div>
+                <div class="tab_btn">
+                    <ul>
+                        <li class="list_all on"><a href="#">종합</a></li>
+                        <li class="list_dom"><a href="#">국내</a></li>
+                        <li class="list_over"><a href="#">해외</a></li>
+                    </ul>
+                </div>
+                <div class="new_list">
+                    <ul>
+                        <li class="all dom">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/infinite.jpg" alt="Begin 인피니트"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>Beign</strong>
+                                <span class="art_name">인피니트</span>
+                            </a>
+                        </li>
+                        <li class="all dom">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/itzy.jpg" alt="KILL MY DOUBT ITZY(있지)"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>                                    
+                                </div>
+                                <strong>KILL MY DOUBT</strong>
+                                <span class="art_name">ITZY(있지)</span>
+                            </a>
+                        </li>
+                        <li  class="all dom">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/enhypen.jpg" alt="DARK MOON: THE BLOOD ALTAR ENHYPEN"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>DARK MOON: THE BLOOD ALTAR</strong>
+                                <span class="art_name">ENHYPEN</span>
+                            </a>
+                        </li>
+                        <li class="all over">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/FRIA.jpg" alt="This is vision FRIA(프리아)"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>This is vision</strong>
+                                <span class="art_name">FRIA(프리아)</span>
+                            </a>
+                        </li>
+                        <li  class="all over">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/mirror.jpg" alt="Mirror 김유나"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>Mirror</strong>
+                                <span class="art_name">김유나</span>
+                            </a>
+                        </li>
+                        <li  class="all dom">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/gate.jpg" alt="ALL IN 게이트 플라워즈"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>ALL IN</strong>
+                                <span class="art_name">게이트 플라워즈</span>
+                            </a>
+                        </li>
+                        <li  class="all over">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/horizon.jpg" alt="Horizon 권영훈"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>Horizon</strong>
+                                <span class="art_name">권영훈</span>
+                            </a>
+                        </li>
+                        <li  class="all over">
+                            <a href="#">
+                                <div class="img_v">
+                                    <figure><img src="./img/album/soda.jpg" alt="SODA 로켓펀치"></figure>
+                                    <span class="material-symbols-rounded play">play_arrow</span>
+                                </div>
+                                <strong>SODA</strong>
+                                <span class="art_name">로켓펀치(Rocket Punch)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- dj station -->
+        <div id="dj_station">
+            <div class="layout">
+                <div class="tit">
+                    <h2>DJ 스테이션</h2>
+                    <span class="p_btn"><a href="#">전체보기</a></span>
+                </div>
+                <div class="feel_station swiper-container">
+                    <div class="tit">
+                        <h3>#느낌별 스테이션</h3>
+                        <span class="p_btn"><a href="#">더보기</a></span>
+                    </div>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/mood_1_NowHot.png" alt="지금인기"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/mood_2_Hip.png" alt="힙터질땨"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/mood_3_Happy.png" alt="신났을때"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/mood_4_Sad.png" alt="우우울할때"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/mood_5_Love.png" alt="사랑할때"></a></li>
+                    </ul>
+                </div>
+                <div class="genre_station swiper-container">
+                    <div class="tit">
+                        <h3>#장르 스테이션</h3>
+                        <span class="p_btn"><a href="#">더보기</a></span>
+                    </div>
+
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/dj_3_genre_1.png" alt="요즘 K-POP"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/dj_3_genre_2.png" alt="요즘 POP"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/dj_3_genre_3.png" alt="여자 아이돌"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/dj_3_genre_4.png" alt="남자 아이돌"></a></li>
+                        <li class="swiper-slide"><a href="#"><span class="material-symbols-rounded play">play_arrow</span><img src="img/album/dj_3_genre_5.png" alt="슬픈 발라드"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIBE MAG -->
+        <div id="vibe_mag">
+            <div class="layout">
+                <div class="tit">
+                    <h2>VIBE MAG</h2>
+                    <span class="p_btn"><a href="#">전체보기</a></span>
+                </div>
+                <div class="mag_con">
+                    <figure><img src="./img/ifnt.jpg" alt="인피니트 5년만에 완전체 컴백 신곡 new emotions"></figure>
+                    <div class="con">
+                        <span class="special">SPECIAL</span>
+                        <h2>INFINITE</h2>
+                        <h3><span>5년만에 완전체</span>COMEBACK</h3>
+                        <div class="album">
+                            <a href="#">
+                                <figure><img src="./img/album/infinite.jpg" alt="new emotions infinite"></figure>
+                                <div class="album_con">
+                                    <strong>New Emotions</strong>
+                                    <span>인피니트</span>
+                                </div>
+                                <span class="material-symbols-rounded play">play_arrow</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- m_song -->
+        <div id="month_song">
+            <div class="layout">
+                <div class="tit">
+                    <h2>이달의 노래<span>총12곡</span></h2>
+                    <span class="p_btn"><a href="#">전체보기</a></span>
+                </div>
+                <div class="month">
+                    <figure><img src="./img/album/month.png" alt="이달의 노래"></figure>
+                    <div class="swiper_m swiper-container">
+                        <div class="month_list swiper-wrapper">
+                            <!-- 1 ~ 6 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 super shy"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">Super Shy</h3>
+                                            <span class="art_name">New Jeans</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 ETA"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">ETA</h3>
+                                            <span class="art_name">New Jeans</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/ive.jpg" alt="IVE(아이브) I AM"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">I AM</h3>
+                                            <span class="art_name">IVE(아이브)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/seven.jpg" alt="정국 Seven (feat. Latto) - Clean Ver "></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">Seven (feat. Latto) - Clean Ver </h3>
+                                            <span class="art_name">정국</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 퀸카(Queencard)"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">퀸카(Queencard)</h3>
+                                            <span class="art_name">(여자)아이들</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/les.jpg" alt="LE SSERAFIM(르세라핌) 이브, 프시케 그리고 푸른 수염의 아내"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">이브, 프시케 그리고 푸른 수염의 아내</h3>
+                                            <span class="art_name">LE SSERAFIM(르세라핌)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 7 ~ 12 -->
+                            <ul class="swiper-slide">
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/queen.jpg" alt="(여자)아이들 Allergy"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">Allergy</h3>
+                                            <span class="art_name">(여자)아이들</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/spicy_aespa.jpg" alt="aespa spicy"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">spicy</h3>
+                                            <span class="art_name">aespa</span>                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/gr_cm10.jpg" alt="10cm 그라데이션"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">그라데이션</h3>
+                                            <span class="art_name">10cm</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/ive.jpg" alt="IVE(아이브) I AM"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">I AM</h3>
+                                            <span class="art_name">IVE(아이브)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 super shy"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">Super Shy</h3>
+                                            <span class="art_name">New Jeans</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <figure><img src="./img/album/newjeans.jpg" alt="뉴진스 ETA"></figure>
+                                        <div class="con">
+                                            <h3 class="a_tit">ETA</h3>
+                                            <span class="art_name">New Jeans</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="notice">
+            <div class="layout">
+                <strong>공지사항</strong>
+                <ul>
+                    <li><a href="#">공지사항 음악과 쇼핑혜택을 하나로! 첫 구독 무료 혜택 받기</a></li>
+                    <li><a href="#">인피니트 5년만에 완전체 컴백</a></li>
+                    <li><a href="#">개인정보처리방침관련</a></li>
+                </ul>
+                <div class="plus"><a href="#"><span class="material-symbols-rounded">add_circle</span></a></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="music_box">
+        <div class="music_a">
+            <div class="music_h"></div>
+            <audio id="mAudio">
+                <source class="s" src="./img/infinite_newEm.mp3">
+            </audio>
+        </div>
+        <div class="layout">
+            <div class="album">
+                <a href="#">
+                    <figure><img src="./img/album/infinite.jpg" alt="new emotions infinite"></figure>
+                    <div class="album_con">
+                        <strong>New Emotions</strong>
+                        <span>인피니트</span>
+                    </div>
+                </a>
+            </div>
+            <div class="play_stop">
+                <span class="material-symbols-rounded">skip_previous</span>
+                <span class="material-symbols-rounded play">play_arrow</span>
+                <span class="material-symbols-rounded">skip_next</span>
+            </div>
+            <div class="music_b">
+                <span class="material-symbols-rounded like favorite">favorite</span>
+                <a href="#"><span class="material-symbols-rounded">queue_music</span></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="mb_menu">
+        <ul>
+            <li class="mb_active"><a href="#"><span class="material-symbols-rounded">home</span></a></li>
+            <li><a href="#"><span class="material-symbols-rounded">star</span></a></li>
+            <li><a href="#"><span class="material-symbols-rounded">person</span></a></li>
+            <li><a href="#"><span class="material-symbols-rounded">sell</span></a></li>
+            <li><a href="#"><span class="material-symbols-rounded">more_horiz</span></a></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="layout">
+            <ul>
+                <li>네이버(주) 대표이사 최수연 | 사업자등록번호 220-81-62517 | 통신판매업신고번호 제2006-경기 성남-0692호</li>
+                <li>주소 : 경기도 성남시 분당수 정자일로 95, NAVER 1784, 13561 | 대표전화 1588-3820 | 이메일 ccnaver@naver.com | 호스팅 서버 제공 Naver Cloud</li>
+                <li>개인정보처리방침 | 네이버 이용약관 | VIBE 이용약관 | VIBE 커뮤니티 운영정책 | 고객센터 | 결제/환불 안내 | VIBE 스마트봇 | 톡톡상담</li>
+                <li>사업자정보확인  &copy;NAVER Crop.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

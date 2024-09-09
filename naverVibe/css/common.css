@@ -1,0 +1,74 @@
+@charset "utf-8";
+.layout{max-width: 1440px; margin: 0 auto;}
+header{box-sizing: border-box; padding: 10px; position:fixed; background: #1b1b1b; width: 100%; top: 0; z-index: 9999;}
+header .h_top{display: flex; justify-content: space-between; align-items: center; margin: 0.3em auto 1.5em;}
+.h_top #logo{width: 160px;}
+#logo img{width: 100%;}
+
+.small_m{display: flex; align-items: center;}
+.small_m ul{display: flex; margin-right: 15px;}
+.small_m ul li a{position: relative; display: block; padding-right: 15px; color: #ccc;}
+.small_m ul li:hover a{color: #fd0c35;}
+.small_m ul li a::after{position: absolute; top: 5px; right: 6px; display: block; content: ''; height: 12px; border-right: 1px solid #ccc; }
+.small_m ul li:last-child a::after{display: none;}
+.small_m .mb_ship a{display: flex; width: 100%; align-items: center; padding: 1.5em; box-sizing: border-box; height: 35px; line-height: 35px; border-radius: 20px; background: linear-gradient(to right, #7e00fb 0%, #fd0c35 50%, #7e00fb 101%) no-repeat right/200%; text-align: center; transition: all 0.3s ease;}
+.small_m .mb_ship a:hover{background-position:left;}
+.small_m .mb_ship a span{width: 25px; height: 25px; background: url('../img/logo_g.png') no-repeat 0 0/contain; display: block; margin-right: 8px;}
+.h_bottom .layout{display: flex; justify-content: space-between; align-items: center;}
+.h_bottom .m_menu ul{display: flex; justify-content: space-between;}
+.h_bottom .m_menu ul li{margin-right: 3em;}
+.h_bottom .m_menu ul li a{display: block; font-size: 1.5em; height: 70px; line-height: 70px; color: #bdbdbd;}
+.h_bottom .m_menu ul li.active a{color: #fd0c35;}
+.h_bottom .m_menu ul li:hover a{color: #fff;}
+
+.login_box a{display: block; font-size: 1.2em; color: #ccc;}
+.login_box a span{vertical-align: bottom; margin-right: 3px;}
+.login_box a:hover{color: #fff;}
+
+/* 더보기 전체보기 버튼 */
+.p_btn a:hover{color: #fd0c35;}
+
+footer{width: 100%; box-sizing: border-box;  margin-bottom: 80px; padding: 20px 0; background: #1b1b1b; color: #666;}
+footer li{padding-bottom: 10px;}
+
+
+/* 모바일 버전 */
+/* 상단메뉴 */
+.mob{display: none;}
+.mob .mob_menu{font-size: 2.5em; color: #fd0c35; cursor: pointer;}
+/* 하단 메뉴 */
+.mb_menu{display: none; position: fixed; bottom: 0; left: 0; width: 100%;  background: #010101; height: 50px; }
+.mb_menu ul{display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding: 0 20px;}
+.mb_menu ul li a{display: block; }
+.mb_menu ul li span{line-height: 50px; font-size: 2em;}
+.mb_menu ul li.mb_active a{color: #fd0c35;}
+
+
+/* 모바일버전 */
+.mb_bg{width: 100%; height: 100vh;  position: fixed; top: 0; right: -100%; background: #020202;}
+.mob .mob_m{position: fixed;  width: 100%; top: 0; right: -100%; }
+.mob .mob_m li{padding: 10px; text-align: center; border-bottom: 1px solid #333; }
+.mob .mob_m li a{display: block; font-size: 1.3em; font-weight: 500; background: #020202; color: #ccc;}
+.mob .mob_m li.active a{color: #fd0c35;}
+@media screen and (max-width:850px) {
+    .h_top #logo{width: 150px;}
+    .m_menu{width: 100%;}
+    .h_bottom .m_menu ul li{margin-right: 0;}
+    .h_bottom .m_menu ul li a{font-size: 1.4em}
+    .login_box, .small_m{display: none;}
+
+    footer{padding: 10px 20px; margin-bottom: 110px;}
+    footer li:nth-child(1),footer li:nth-child(2){display: none;}
+    .mb_menu{display: block;}
+}
+@media screen and (max-width:520px) {
+    header .h_top{margin-bottom: 0;}
+    .h_top #logo{width: 130px;}
+    .mob{display: block;}
+    .m_menu{display: none;}
+    .h_top #logo{width: 120px;}
+    .small_m .mb_ship a{padding: 1.3em;}
+    .h_bottom .m_menu ul li a{font-size: 1.2em}
+
+
+}
