@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파스쿠찌</title>
+    <script src="./js/swiperJS/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/swiper/swiper.min.css" />
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <!-- <script src="./js/navi.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="./js/navi.js"></script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="./img/c_favicon.png">     <!-- 아이폰-->
+    <link rel="shortcut icon" href="./img/c_favicon.png">   <!-- 브라우저에서 -->
+
+    <!-- 구글아이콘 불러오기 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top_h">
+            <div class="layout">
+                <h1 id="h_logo"><a href="main.html"><img src="./img/h_logo.png" alt="메인으로가기"></a></h1>
+                <div class="search_box">
+                    <div class="box">
+                        <label for="sc_in"></label>
+                        <input type="search" name="sc_in" id="sc_in" placeholder="검색할 단어를 입력해 주세요">
+                    </div>
+                    <div class="tag_v">
+                        <ul>
+                            <li><a href="#">#이벤트</a></li>
+                            <li><a href="#">#신규매장</a></li>
+                            <li><a href="#">#커피</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="member_box">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">가맹사업 안내</a></li>
+                    </ul>
+                </div>
+                <div class="mb_wrap">
+                    <div id="mb_btn">
+                        <span class="material-symbols-rounded ">menu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="menu">
+            <nav id="main">
+                <ul>
+                    <li>
+                        <a href="#">파스쿠찌</a>
+                        <nav class="sub">
+                            <ul>
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">커피 &amp; 컬처</a></li>
+                                <li><a href="#">에스프레소 바</a></li>
+                                <li><a href="#">센트로 서울</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                        <nav class="sub">
+                            <ul>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">디저트</a></li>
+                                <li><a href="#">MD</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="#">매장 안내</a>
+                        <nav class="sub">
+                            <ul>
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 소식</a>
+                        <nav class="sub">
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="#">고객 지원</a>
+                        <nav class="sub">
+                            <ul>
+                                <li><a href="#">1:1문의하기</a></li>
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">제휴안내</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sub_bg"></div>
+        </div>
+
+    </header>
+    <!-- contents -->
+    <div class="contents">
+        <!-- slide -->
+        <div class="slide_box">
+            <div class="slide">
+                <ul>
+                    <li><a href="#"><img src="./img/slide01.jpg" class="pc_img" alt="슬라이드1"><img src="./img/mb_slide01.jpg" class="mb_img" alt="슬라이드1"></a></li>
+                    <li><a href="#"><img src="./img/slide02.jpg" class="pc_img" alt="슬라이드2"><img src="./img/mb_slide02.jpg" class="mb_img" alt="슬라이드2"></a></li>
+                    <li><a href="#"><img src="./img/slide03.jpg" class="pc_img" alt="슬라이드3"><img src="./img/mb_slide03.jpg" class="mb_img" alt="슬라이드3"></a></li>
+                </ul>
+            </div>
+            <div class="layout">
+                <div class="sl_btn">
+                    <span class="material-symbols-rounded prev_btn">navigate_before</span>
+                    <span class="material-symbols-rounded next_btn">navigate_next</span>
+                </div>
+            </div>
+        </div>
+        <!-- list -->
+        <div class="ranking_list">
+            <div class="layout">
+                <div class="tit">
+                    <h2>Best Menu</h2>
+                    <div class="plus"><a href="#">더보기</a></div>
+                </div>
+                <div class="rank_v">
+                    <div class="list best swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_1.png" alt="아이스 아메리카노"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 아메리카노</h3>
+                                        <p class="c_con">에스프레소와 정수된 물, 얼음을 혼합한<br>아이스 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_2.png" alt="핫 아메리카노"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">핫 아메리카노</h3>
+                                        <p class="c_con">에스프레소와 정수된 물, 얼음을 혼합한 <br> 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_3.png" alt="아이스 카페 헤이 오트"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 카페 헤이 오트</h3>
+                                        <p class="c_con">골든색 원두와 헤이즐넛 향의 풍미가 식물성 귀리음료와 어우러져
+                                            달콤 고소한 파스쿠찌만의 시그니처 카페라떼</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_4.png" alt="아이스 카라멜라떼 마끼아또"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 카라멜라떼 마끼아또</h3>
+                                        <p class="c_con">달콤한 카라멜과 우유에 에스프레소를 혼합한<br>아이스 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_5.png" alt="아이스 카페라떼"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 카페라떼</h3>
+                                        <p class="c_con">농도 짙은 에스프레스와 우유, 얼음을 혼합한<br>아이스 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_6.png" alt="아이스 카페모카"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 카페모카</h3>
+                                        <p class="c_con">달콤한 초콜릿과 우유에 에스프레소를 혼합 한 후, 생크림을 얹은<br>아이스 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_7.png" alt="티라미수 젤라또 카페라떼"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">티라미수 젤라또 카페라떼</h3>
+                                        <p class="c_con">파스쿠찌 티라미수 젤라또와 바닐라빈 시럽, 에스프레소가 조화롭게 어우러져
+                                            부드러운 달콤함이 은은하게 퍼지는 매력적인 아이스 카페라떼</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_1.png" alt="아이스 아메리카노"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 아메리카노</h3>
+                                        <p class="c_con">에스프레소와 정수된 물, 얼음을 혼합한<br>아이스 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_2.png" alt="핫 아메리카노"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">핫 아메리카노</h3>
+                                        <p class="c_con">에스프레소와 정수된 물, 얼음을 혼합한 <br> 커피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <figure><img src="./img/ice_3.png" alt="아이스 카페 헤이 오트"></figure>
+                                    <div class="c_info">
+                                        <h3 class="c_name">아이스 카페 헤이 오트</h3>
+                                        <p class="c_con">골든색 원두와 헤이즐넛 향의 풍미가 식물성 귀리음료와 어우러져
+                                            달콤 고소한 파스쿠찌만의 시그니처 카페라떼</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rank_btn">
+                        <span class="material-symbols-rounded swiper-button-prev prev_btn best_p ">navigate_before</span>
+                        <span class="material-symbols-rounded swiper-button-next next_btn best_n">navigate_next</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- franchise -->
+        <div class="fran_con">
+            <figure><img src="./img/bg_franchise.jpg" alt="가맹점문의"></figure>
+            <div class="fran">
+                <div class="tit">
+                    <strong>CAFFE PASCUCCI</strong>
+                    <h2>FRANCHISEE</h2>
+                </div>
+                <p>창업 안내와 가맹점 안내를 도와드리겠습니다.</p>
+                <div class="fran_btn">
+                    <button class="fed">창업 안내</button>
+                    <button class="fise">가맹점 안내</button>
+                </div>
+            </div>
+        </div>
+        <!-- event -->
+        <div class="event_con">
+            <div class="layout">
+                <div class="con">
+                    <div class="view">
+                        <!-- <div class="tit">
+             vscode-file://vscode-app/c:/Users/Administrator/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html               <h2>체리블라썸</h2>
+                            <span><a href="#">자세히 보러가기</a></span>
+                        </div> -->
+                       
+                        <a href="#"> <figure><img src="./img/p_ev_1.jpg" alt="유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시"></figure></a> 
+                        <div class="v_con">
+                            <h2>유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시</h2>
+                            <p><span>23.10.05 ~ 23.11.05</span>기간 내에 해피포인트 앱에서 제주 음료 1000원 쿠폰 선착순 3만명 배포</p>
+                        </div>    
+                    </div>
+                    <div class="event_list">
+                        <div class="tit">
+                            <h2>EVENT</h2>
+                            <div class="plus"><a href="#">더보기</a></div>
+                        </div>
+                        <div class="swiper-container es_con">
+                            <ul class="swiper-wrapper">
+                                <li class="active swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/p_ev_1.jpg" alt="유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시">
+                                            <img src="./img/m_ev_1.jpg" alt="유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시">
+                                        </figure>
+                                        <div class="info">
+                                            <strong>유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시</strong><span>23.10.05</span>
+                                            <p><span>23.10.05 ~ 23.11.05</span>기간 내에 해피포인트 앱에서 제주 음료 1000원 쿠폰 선착순 3만명 배포</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/p_ev_2.jpg" alt="더욱 커진 용량으로 빠르게 더위 탈출하기 위한 여름 시즌 음료 출시">
+                                            <img src="./img/m_ev_2.jpg" alt="더욱 커진 용량으로 빠르게 더위 탈출하기 위한 여름 시즌 음료 출시">
+                                        </figure>
+                                        
+                                        <div class="info">
+                                            <strong>더욱 커진 용량으로 빠르게 더위 탈출하기 위한 여름 시즌 음료 출시</strong><span>23.08.05</span>
+                                            <p><span>23.10.05 ~ 23.11.05</span>더욱 커진 용량으로 빠르게 더위 탈출하기 위한 여름 시즌 음료</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/p_ev_3.jpg" alt="벚꽃이 가득한 봄맞이 한정 음료 출시">
+                                            <img src="./img/m_ev_3.jpg" alt="벚꽃이 가득한 봄맞이 한정 음료 출시">
+                                        </figure>
+                                        <div class="info">
+                                            <strong>벚꽃이 가득한 봄맞이 한정 음료 출시</strong><span>23.03.05</span>
+                                        </div>
+    
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/p_ev_4.jpg" alt="체리블라썸">
+                                            <img src="./img/m_ev_4.jpg" alt="체리블라썸">
+                                        </figure>
+                                        <div class="info">
+                                            <strong>2023년 토끼의 해 기념 으료 및 케이크 5종 출시</strong><span>23.01.01</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="active swiper-slide">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="./img/p_ev_1.jpg" alt="유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시">
+                                            <img src="./img/m_ev_1.jpg" alt="유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시">
+                                        </figure>
+                                        <div class="info">
+                                            <strong>유채꽃꿀 등 제주 특산품을 활영한 시즌 음료 출시</strong><span>23.10.05</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="notice">
+            <div class="layout">
+                <div class="tit">
+                    <h2>Notice</h2>
+                    <div class="plus"><a href="#">더보기</a></div>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li><a href="#1"><strong><span class="ntion">[공지]</span> 개인정보처리방침 변경 공지(2023년 10월 27일 시행)</strong><span>23.10.10</span></a></li>
+                        <li><a href="#2"><strong>X-MAS 홀케이크 판매점 안내</strong><span>21.12.01</span></a></li>
+                        <li><a href="#3"><strong>딸기 밀크 보틀 판매점 안내</strong><span>21.04.12</span></a></li>
+                        <li><a href="#4"><strong>파스쿠찌 음료별 카페인 함량 안내</strong><span>21.02.16</span></a></li>
+                        <li><a href="#5"><strong>해피포인트 사용 기준 변경 안내</strong><span>19.11.23</span></a></li>
+                        <li><a href="#6"><strong>딸기 밀크 보틀 판매점 안내</strong><span>21.04.12</span></a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="layout">
+            <h1 id="f_logo"><img src="./img/f_logo.png" alt="파스쿠찌"></h1>
+            <div class="f_con">
+                <ul>
+                    <li><a href="#">해피포인트</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">안전보건경영방침</a></li>
+                    <li><a href="#">영상홍보처리기기운영관리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">윤리 신고센터</a></li>
+                    <li><a href="#">거래희망사전등록</a></li>
+                </ul>
+                <div class="ad">
+                    <p>㈜파리크라상 사업장등록번호 : 129-81-07244</p>
+                    <ul>
+                        <li>경기도 성남시 종원구 사기막골로31번길 18</li>
+                        <li>팩스 : 0505-073-0210</li>
+                        <li>고객상담센터 : 080-731-2027</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sns_d">
+                <h2>SNS 바로가기</h2>
+                <ul>
+                    <li><a href="#" target="_blank" title="새창"><img src="./img/sns_facebook.png" alt="페이스북 바로가기"></a></li>
+                    <li><a href="#" target="_blank" title="새창"><img src="./img/sns_youtube.png" alt="유튜브 바로가기"></a></li>
+                    <li><a href="#" target="_blank" title="새창"><img src="./img/sns_instagram.png" alt="인스타 바로가기"></a></li>
+                    <li><a href="#" target="_blank" title="새창"><img src="./img/sns_blog.png" alt="블로그 바로가기"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
